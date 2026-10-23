@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealer Locator & Service Centers | Vanguard Motorcycles</title>
+  <meta name="description" content="Find your nearest authorized Vanguard motorcycle showroom, experience lounge, and certified master service workshop across major metropolitan cities.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .dealer-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      transition: all var(--transition-fast);
+      display: flex;
+      flex-direction: column;
+    }
+    .dealer-card:hover {
+      border-color: var(--accent-copper);
+      transform: translateY(-4px);
+      box-shadow: var(--glass-shadow);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="brand-text">
+          <span class="brand-name">Vanguard</span>
+          <span class="brand-tagline">Motorcycles</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="motorcycles.html" class="nav-link">Motorcycles</a>
+        <a href="model-detail.html" class="nav-link">Hunter 650</a>
+        <a href="configurator.html" class="nav-link">Customizer</a>
+        <a href="rides-community.html" class="nav-link">Rides & Events</a>
+        <a href="apparel-accessories.html" class="nav-link">Gear</a>
+        <a href="dealers.html" class="nav-link active">Dealers</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="about.html" class="nav-link">Heritage</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="book-test-ride.html" class="btn btn-primary btn-sm">Book Test Ride</a>
+        <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: radial-gradient(circle at 50% 20%, #151e2b 0%, #0a0c10 80%); padding: 4.5rem 0 3rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <span class="section-tag">Nationwide Network</span>
+      <h1 class="section-title">Locate A <span>Showroom</span></h1>
+      <p class="section-desc" style="margin: 0.8rem auto 2rem;">Visit an authorized Vanguard showroom to touch, feel, and test ride our machines in a curated cafe-lounge setting.</p>
+      
+      <!-- Search Filter Bar -->
+      <div style="max-width: 680px; margin: 0 auto; display: flex; gap: 0.8rem; background: var(--bg-card); padding: 0.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); flex-wrap: wrap;">
+        <select id="dealerCityFilter" class="form-control" style="flex: 1; min-width: 180px;">
+          <option value="all">All Cities (India)</option>
+          <option value="Delhi">Delhi NCR</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Pune">Pune</option>
+        </select>
+        <input type="text" id="dealerSearchInput" placeholder="Search by locality, street or pincode..." class="form-control" style="flex: 1.6; min-width: 220px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Dealer Cards Grid -->
+  <section style="padding: 4.5rem 0; background: var(--bg-dark);">
+    <div class="container">
+      <div class="grid-3" id="dealersGrid">
+        
+        <!-- Dealer 1 -->
+        <article class="dealer-card" data-city="Delhi">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Flagship Experience Hub</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Flagship New Delhi
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            Plot 14, Inner Circle, Connaught Place, New Delhi - 110001 <br>
+            <span style="color: var(--text-muted);">Landmark: Near Regal Cinema</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 10:00 AM – 8:30 PM (Mon - Sun)</div>
+            <div><strong>Phone:</strong> +91 11 4892 7700</div>
+            <div><strong>Facilities:</strong> Test Track, Cafe Lounge, 3D Configurator Wall</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html?model=Hunter650" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+        <!-- Dealer 2 -->
+        <article class="dealer-card" data-city="Mumbai">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Heritage Lounge</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Bandra Heritage Garage
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            42, Turner Road, Bandra West, Mumbai - 400050 <br>
+            <span style="color: var(--text-muted);">Landmark: Opposite Perry Cross Ground</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 10:00 AM – 9:00 PM (Mon - Sun)</div>
+            <div><strong>Phone:</strong> +91 22 6120 4400</div>
+            <div><strong>Facilities:</strong> Apparel Studio, Certified Dyno Bay</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+        <!-- Dealer 3 -->
+        <article class="dealer-card" data-city="Bengaluru">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Experience Pavilion</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Indiranagar MotoHub
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            844, 100 Feet Road, Indiranagar, Bengaluru - 560038 <br>
+            <span style="color: var(--text-muted);">Landmark: Near 12th Main Junction</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 9:30 AM – 8:30 PM (Mon - Sun)</div>
+            <div><strong>Phone:</strong> +91 80 4122 8899</div>
+            <div><strong>Facilities:</strong> Test Fleet, Full Service Workshop</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+        <!-- Dealer 4 -->
+        <article class="dealer-card" data-city="Chennai">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Factory Hub</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Anna Salai Pavilion
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            108 Mount Road, Anna Salai, Chennai - 600002 <br>
+            <span style="color: var(--text-muted);">Landmark: Near Thousand Lights</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 10:00 AM – 8:00 PM (Mon - Sat)</div>
+            <div><strong>Phone:</strong> +91 44 2855 1200</div>
+            <div><strong>Facilities:</strong> Direct Factory Outlet & Genuine Parts</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+        <!-- Dealer 5 -->
+        <article class="dealer-card" data-city="Hyderabad">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Jubilee Pavilion</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Jubilee Hills Center
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            Road No. 36, Jubilee Hills, Hyderabad - 500033 <br>
+            <span style="color: var(--text-muted);">Landmark: Near Peddamma Temple Metro</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 10:00 AM – 9:00 PM (Mon - Sun)</div>
+            <div><strong>Phone:</strong> +91 40 4567 8900</div>
+            <div><strong>Facilities:</strong> Customizer Lounge, Fast Service Bays</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+        <!-- Dealer 6 -->
+        <article class="dealer-card" data-city="Pune">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.6rem;">
+            <span class="badge badge-copper">Riders Hub</span>
+            <span style="font-size: 0.78rem; color: #34d399; font-weight: 700;">Open Today</span>
+          </div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff;">
+            Vanguard Koregaon Park Garage
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1;">
+            North Main Road, Koregaon Park, Pune - 411001 <br>
+            <span style="color: var(--text-muted);">Landmark: Lane 7 Junction</span>
+          </p>
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: auto; font-size: 0.82rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+            <div><strong>Hours:</strong> 9:30 AM – 8:30 PM (Mon - Sun)</div>
+            <div><strong>Phone:</strong> +91 20 6711 3322</div>
+            <div><strong>Facilities:</strong> Weekend Breakfast Ride Meet Point</div>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <a href="book-test-ride.html" class="btn btn-primary btn-sm" style="flex: 1;">Book Visit</a>
+            <button class="btn btn-secondary btn-sm" onclick="showToast('Directions sent to navigation map!')">Directions</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise / Dealership Lead Form -->
+  <section style="background: linear-gradient(135deg, #131924 0%, #0c0f16 100%); padding: 5rem 0; border-top: 1px solid var(--border-subtle);">
+    <div class="container" style="max-width: 900px;">
+      <div class="section-header text-center">
+        <span class="section-tag">Business Expansion</span>
+        <h2 class="section-title">Become An Authorized <span>Dealer Partner</span></h2>
+        <p class="section-desc">Join the fastest-growing modern-classic motorcycle brand. We provide 360-degree showroom architectural blueprinting, technician training, and marketing support.</p>
+      </div>
+
+      <div class="lead-form-container">
+        <form data-lead-form data-lead-type="Dealer Franchise Application">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Applicant / Entity Name *</label>
+              <input type="text" name="applicantName" placeholder="Your Full Name or Company" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Contact Phone *</label>
+              <input type="tel" name="phone" placeholder="Mobile / Landline Number" required class="form-control" pattern="[0-9]{10}">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Corporate Email Address *</label>
+              <input type="email" name="email" placeholder="corporate@domain.com" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Proposed City / Territory *</label>
+              <input type="text" name="proposedCity" placeholder="e.g. Chandigarh, Jaipur, Kochi" required class="form-control">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Proposed Showroom Carpet Area</label>
+              <select name="carpetArea" class="form-control">
+                <option value="2,500 - 4,000 sq ft">2,500 - 4,000 sq ft (Studio)</option>
+                <option value="4,000 - 7,000 sq ft" selected>4,000 - 7,000 sq ft (Standard 3S Hub)</option>
+                <option value="7,000+ sq ft">7,000+ sq ft (Flagship Experience Center)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Automotive Retail Experience</label>
+              <select name="priorExperience" class="form-control">
+                <option value="Currently running 2-wheeler dealership">Currently running 2-wheeler dealership</option>
+                <option value="Currently running 4-wheeler dealership">Currently running 4-wheeler dealership</option>
+                <option value="New investor in automotive retail">New investor in automotive retail</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Investment Readiness & Notes</label>
+            <textarea name="investmentNotes" rows="3" class="form-control" placeholder="Outline available commercial real estate, current capital allocation capability..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Submit Dealership Franchise Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard Motorcycles. Showroom Network Directory.</div>
+        <div><a href="index.html">Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Search & City Filter for Dealers
+    const citySelect = document.getElementById('dealerCityFilter');
+    const searchInput = document.getElementById('dealerSearchInput');
+    const cards = document.querySelectorAll('#dealersGrid .dealer-card');
+
+    function filterDealers() {
+      const selectedCity = citySelect.value.toLowerCase();
+      const searchTerm = searchInput.value.toLowerCase().trim();
+
+      cards.forEach(card => {
+        const cardCity = card.getAttribute('data-city').toLowerCase();
+        const cardText = card.textContent.toLowerCase();
+
+        const matchesCity = (selectedCity === 'all') || (cardCity === selectedCity);
+        const matchesSearch = (!searchTerm) || cardText.includes(searchTerm);
+
+        if (matchesCity && matchesSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    citySelect.addEventListener('change', filterDealers);
+    searchInput.addEventListener('input', filterDealers);
+  </script>
+</body>
+</html>

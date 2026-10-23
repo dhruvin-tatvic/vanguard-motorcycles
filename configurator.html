@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make It Yours | Customizer & Price Configurator | Vanguard Motorcycles</title>
+  <meta name="description" content="Build and customize your dream Vanguard motorcycle. Choose authentic factory colorways, exhausts, touring luggage, and accessories with instant price calculation.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .config-option-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all var(--transition-fast);
+      margin-bottom: 0.8rem;
+    }
+    .config-option-card:hover {
+      border-color: rgba(226, 88, 34, 0.4);
+      background: var(--bg-card-hover);
+    }
+    .config-option-card.active {
+      border-color: var(--accent-copper);
+      background: rgba(226, 88, 34, 0.1);
+    }
+    .config-option-card.active .check-indicator {
+      background: var(--accent-copper);
+      color: #fff;
+    }
+    .check-indicator {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: transparent;
+    }
+    .config-visual-panel {
+      position: sticky;
+      top: 100px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-copper);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: var(--glass-shadow);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="brand-text">
+          <span class="brand-name">Vanguard</span>
+          <span class="brand-tagline">Motorcycles</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="motorcycles.html" class="nav-link">Motorcycles</a>
+        <a href="model-detail.html" class="nav-link">Hunter 650</a>
+        <a href="configurator.html" class="nav-link active">Customizer</a>
+        <a href="rides-community.html" class="nav-link">Rides & Events</a>
+        <a href="apparel-accessories.html" class="nav-link">Gear</a>
+        <a href="dealers.html" class="nav-link">Dealers</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="about.html" class="nav-link">Heritage</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="book-test-ride.html" class="btn btn-primary btn-sm">Book Test Ride</a>
+        <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: radial-gradient(circle at 50% 20%, #172435 0%, #0a0c10 80%); padding: 4rem 0 2.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <span class="section-tag">Make It Yours</span>
+      <h1 class="section-title">Factory <span>Customizer</span></h1>
+      <p class="section-desc" style="margin: 0.8rem auto 0;">Hand-curate your bespoke Vanguard. Every selected accessory is factory-fitted with full warranty integrity.</p>
+    </div>
+  </section>
+
+  <!-- Configurator Studio -->
+  <section style="padding: 4rem 0 6rem; background: var(--bg-dark);">
+    <div class="container">
+      <div class="grid-2" style="grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: flex-start;">
+        
+        <!-- Left: Options Customizer -->
+        <div>
+          
+          <!-- Category 1: Base Platform -->
+          <div style="background: var(--bg-card); padding: 1.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); margin-bottom: 1.8rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+              1. Choose Base Platform
+            </h3>
+            
+            <div id="baseBikeGroup">
+              <div class="config-option-card active" data-bike="hunter" data-base-price="349000" data-img="assets/images/hero-hunter-650.jpg" data-name="Hunter 650 Twin">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Vanguard Hunter 650 Twin</div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Cafe Racer • 648cc Parallel Twin</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-weight: 800; color: #fff;">₹3,49,000</div>
+                  <div class="check-indicator">&#10003;</div>
+                </div>
+              </div>
+
+              <div class="config-option-card" data-bike="expedition" data-base-price="289000" data-img="assets/images/model-expedition-450.jpg" data-name="Expedition 450">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Vanguard Expedition 450</div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Adventure Tourer • 452cc Liquid-Cooled</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-weight: 800; color: #fff;">₹2,89,000</div>
+                  <div class="check-indicator">&#10003;</div>
+                </div>
+              </div>
+
+              <div class="config-option-card" data-bike="valkyrie" data-base-price="375000" data-img="assets/images/model-valkyrie-cruiser.jpg" data-name="Valkyrie Cruiser 650">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Vanguard Valkyrie Cruiser 650</div>
+                  <div style="font-size: 0.8rem; color: var(--text-muted);">Highway Cruiser • 648cc Relaxed Stance</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-weight: 800; color: #fff;">₹3,75,000</div>
+                  <div class="check-indicator">&#10003;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Exhaust System -->
+          <div style="background: var(--bg-card); padding: 1.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); margin-bottom: 1.8rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+              2. Exhaust Configuration
+            </h3>
+
+            <div id="exhaustGroup">
+              <div class="config-option-card active" data-addon-name="Dual Stainless Megaphones (OEM Factory)" data-price="0">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Dual Stainless Megaphones (Factory)</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Standard throat rumble • Street legal</div>
+                </div>
+                <div style="font-weight: 700; color: var(--accent-green-bright);">Included</div>
+              </div>
+
+              <div class="config-option-card" data-addon-name="Akrapovič Blackline Twin Sports Slip-on" data-price="28500">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Akrapovič Titanium Sports Slip-on</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">-3.2kg lighter • Deeper bass combustion pulse</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹28,500</div>
+              </div>
+
+              <div class="config-option-card" data-addon-name="Straight-Cut Swept Chrome Megaphones" data-price="18000">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Straight-Cut Swept Chrome Exhaust</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Vintage 1960s British Isle tone</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹18,000</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Touring Luggage & Protection -->
+          <div style="background: var(--bg-card); padding: 1.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); margin-bottom: 1.8rem;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+              3. Luggage & Protection Add-ons (Multi-Select)
+            </h3>
+
+            <div id="accessoriesGroup">
+              <div class="config-option-card addon-checkbox" data-addon-name="Aircraft-Grade Aluminum Hard Panniers (37L x 2)" data-price="34000">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Heavy-Duty Expedition Panniers (Dual 37L)</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Waterproof gasket • Quick release rack</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹34,000</div>
+              </div>
+
+              <div class="config-option-card addon-checkbox" data-addon-name="Stainless Steel Engine Guard & Skid Plate" data-price="9500">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Engine Crash Guard & Sump Guard</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Tubular steel 28mm • Off-road protection</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹9,500</div>
+              </div>
+
+              <div class="config-option-card addon-checkbox" data-addon-name="CNC Machined Bar-End Touring Mirrors" data-price="5500">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">CNC Billet Bar-End Mirrors</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Anti-glare blue convex lens</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹5,500</div>
+              </div>
+
+              <div class="config-option-card addon-checkbox" data-addon-name="Diamond Quilted Leather Touring Saddle" data-price="8500">
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Diamond Quilted Leather Comfort Seat</div>
+                  <div style="font-size: 0.78rem; color: var(--text-muted);">Gel padding • Memory foam insert</div>
+                </div>
+                <div style="font-weight: 800; color: var(--accent-copper);">+ ₹8,500</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Live Visual & Quotation Lead Box -->
+        <div>
+          <div class="config-visual-panel">
+            <div style="position: relative; border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.2rem; background: #0c0f16;">
+              <img id="configBikePreview" src="assets/images/hero-hunter-650.jpg" alt="Vanguard Configurator Motorcycle Preview" style="width: 100%; transition: all 0.3s ease;">
+              <span id="configBikeBadge" class="badge badge-copper" style="position: absolute; top: 12px; left: 12px;">Hunter 650 Twin</span>
+            </div>
+
+            <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.4rem;">
+                <span>Base Platform Price:</span>
+                <span id="displayBasePrice" style="color: #fff; font-weight: 700;">₹3,49,000</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.4rem;">
+                <span>Selected Accessories:</span>
+                <span id="displayAddonsPrice" style="color: var(--accent-copper); font-weight: 700;">₹0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted);">
+                <span>Factory Fitment & Labor:</span>
+                <span style="color: var(--accent-green-bright); font-weight: 600;">Complimentary</span>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5rem;">
+              <span style="font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase;">Total Build Price:</span>
+              <span id="displayTotalPrice" style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; color: #ffffff;">₹3,49,000</span>
+            </div>
+
+            <!-- Custom Build Lead Form -->
+            <form data-lead-form data-lead-type="Custom Configurator Build Quotation">
+              <input type="hidden" name="customBuildModel" id="formBuildModel" value="Hunter 650 Twin">
+              <input type="hidden" name="totalEstimatedPrice" id="formBuildPrice" value="₹3,49,000">
+              <input type="hidden" name="selectedAddonsSummary" id="formBuildAddons" value="None">
+
+              <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <input type="text" name="customerName" placeholder="Your Name" required class="form-control">
+                <input type="tel" name="phone" placeholder="Mobile Number" required class="form-control" pattern="[0-9]{10}">
+                <input type="email" name="email" placeholder="Email Address" required class="form-control">
+                <select name="preferredCity" class="form-control" required>
+                  <option value="Delhi NCR">Showroom: Delhi NCR</option>
+                  <option value="Mumbai">Showroom: Mumbai</option>
+                  <option value="Bengaluru">Showroom: Bengaluru</option>
+                  <option value="Chennai">Showroom: Chennai</option>
+                  <option value="Hyderabad">Showroom: Hyderabad</option>
+                  <option value="Pune">Showroom: Pune</option>
+                </select>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                  Request Custom Build Quotation
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard Motorcycles. Make It Yours Configurator.</div>
+        <div><a href="index.html">Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Configurator Dynamic Calculator
+    let currentBasePrice = 349000;
+    let currentExhaustPrice = 0;
+    let selectedAccessories = new Map();
+    let currentBikeName = 'Hunter 650 Twin';
+
+    const bikePreview = document.getElementById('configBikePreview');
+    const bikeBadge = document.getElementById('configBikeBadge');
+    const displayBase = document.getElementById('displayBasePrice');
+    const displayAddons = document.getElementById('displayAddonsPrice');
+    const displayTotal = document.getElementById('displayTotalPrice');
+
+    const formModel = document.getElementById('formBuildModel');
+    const formPrice = document.getElementById('formBuildPrice');
+    const formAddons = document.getElementById('formBuildAddons');
+
+    // Base Bike selection
+    const bikeCards = document.querySelectorAll('#baseBikeGroup .config-option-card');
+    bikeCards.forEach(card => {
+      card.addEventListener('click', () => {
+        bikeCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
+        currentBasePrice = parseInt(card.getAttribute('data-base-price'));
+        currentBikeName = card.getAttribute('data-name');
+        bikePreview.src = card.getAttribute('data-img');
+        bikeBadge.textContent = currentBikeName;
+
+        updatePrices();
+      });
+    });
+
+    // Exhaust selection
+    const exhaustCards = document.querySelectorAll('#exhaustGroup .config-option-card');
+    exhaustCards.forEach(card => {
+      card.addEventListener('click', () => {
+        exhaustCards.forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        currentExhaustPrice = parseInt(card.getAttribute('data-price'));
+        updatePrices();
+      });
+    });
+
+    // Multi-select Accessories
+    const addonCards = document.querySelectorAll('#accessoriesGroup .addon-checkbox');
+    addonCards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+        const name = card.getAttribute('data-addon-name');
+        const price = parseInt(card.getAttribute('data-price'));
+
+        if (card.classList.contains('active')) {
+          selectedAccessories.set(name, price);
+        } else {
+          selectedAccessories.delete(name);
+        }
+        updatePrices();
+      });
+    });
+
+    function updatePrices() {
+      let accessoriesTotal = 0;
+      let addonNames = [];
+
+      selectedAccessories.forEach((p, n) => {
+        accessoriesTotal += p;
+        addonNames.push(n);
+      });
+
+      const totalAddons = currentExhaustPrice + accessoriesTotal;
+      const grandTotal = currentBasePrice + totalAddons;
+
+      displayBase.textContent = `₹${currentBasePrice.toLocaleString('en-IN')}`;
+      displayAddons.textContent = `₹${totalAddons.toLocaleString('en-IN')}`;
+      displayTotal.textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
+
+      formModel.value = currentBikeName;
+      formPrice.value = `₹${grandTotal.toLocaleString('en-IN')}`;
+      formAddons.value = addonNames.length > 0 ? addonNames.join(', ') : 'Standard Build';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorcycles Fleet Lineup | Vanguard Motorcycles</title>
+  <meta name="description" content="Explore the full lineup of Vanguard motorcycles. Compare specs, prices, and features across Modern Classics, Adventure Tourers, Highway Cruisers, and Scramblers.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div>Explore our Euro-5 & BS6.2 compliant twin-cylinder and liquid-cooled single engines.</div>
+      <div class="top-bar-links">
+        <a href="dealers.html">Find a Showroom</a>
+        <a href="book-test-ride.html">Book Test Ride</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Vanguard</span>
+          <span class="brand-tagline">Motorcycles</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="motorcycles.html" class="nav-link active">Motorcycles</a>
+        <a href="model-detail.html" class="nav-link">Hunter 650</a>
+        <a href="configurator.html" class="nav-link">Customizer</a>
+        <a href="rides-community.html" class="nav-link">Rides & Events</a>
+        <a href="apparel-accessories.html" class="nav-link">Gear</a>
+        <a href="dealers.html" class="nav-link">Dealers</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="about.html" class="nav-link">Heritage</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="book-test-ride.html" class="btn btn-primary btn-sm">Book Test Ride</a>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: radial-gradient(circle at 50% 30%, #17202e 0%, #0a0c10 80%); padding: 5rem 0 3rem; border-bottom: 1px solid var(--border-subtle); text-align: center;">
+    <div class="container">
+      <span class="section-tag">Pure Motorcycling Arsenal</span>
+      <h1 class="section-title">The Complete <span>Lineup</span></h1>
+      <p class="section-desc" style="margin: 0.8rem auto 2rem;">Every machine in the Vanguard stable is forged with mechanical character, unmistakable exhaust rhythm, and purpose-built geometry.</p>
+      
+      <!-- Interactive Filter Buttons -->
+      <div class="category-tabs" id="modelFilterTabs">
+        <button class="cat-tab active" data-filter="all">All Motorcycles</button>
+        <button class="cat-tab" data-filter="classic">Modern Classic</button>
+        <button class="cat-tab" data-filter="adventure">Adventure</button>
+        <button class="cat-tab" data-filter="cruiser">Cruiser</button>
+        <button class="cat-tab" data-filter="scrambler">Scrambler</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motorcycles Grid -->
+  <section style="padding: 5rem 0; background: var(--bg-dark);">
+    <div class="container">
+      <div class="grid-2" id="motorcyclesFleetList">
+        
+        <!-- Model 1: Hunter 650 Twin -->
+        <article class="bike-card" data-category="classic" id="hunter">
+          <div class="bike-card-img-wrap" style="aspect-ratio: 16/10;">
+            <span class="bike-card-tag">Twin Flagship</span>
+            <img src="assets/images/hero-hunter-650.jpg" alt="Vanguard Hunter 650 Cafe Racer" loading="lazy">
+          </div>
+          <div class="bike-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+              <span class="bike-card-subtitle">Cafe Racer / Twin-Cylinder</span>
+              <span class="badge badge-copper">Most Popular</span>
+            </div>
+            <h2 class="bike-card-title">Vanguard Hunter 650 Twin</h2>
+            <p class="bike-card-desc">
+              Twin-cylinder 648cc counterbalanced engine delivering linear torque across the rev band. Features sculpted tank indentations, clip-on bars, and dual megaphone exhausts.
+            </p>
+            
+            <div class="bike-card-specs" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 1.5rem;">
+              <div class="spec-mini">
+                <div class="spec-mini-val">648 cc</div>
+                <div class="spec-mini-lbl">Parallel Twin</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">47.4 HP</div>
+                <div class="spec-mini-lbl">Power</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">52.3 Nm</div>
+                <div class="spec-mini-lbl">Torque</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">6 Speed</div>
+                <div class="spec-mini-lbl">Slipper Clutch</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 0.9rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary);">
+              <strong>Standard Features:</strong> Dual-channel Bosch ABS, 320mm Brembo front disc, twin-pod digital-analog console with turn-by-turn navigation.
+            </div>
+
+            <div class="bike-card-footer">
+              <div>
+                <div class="bike-card-price">₹3,49,000</div>
+                <small style="color: var(--text-muted);">Ex-showroom India / $6,499 US</small>
+              </div>
+              <div style="display: flex; gap: 0.6rem;">
+                <a href="model-detail.html" class="btn btn-secondary btn-sm">Explore Specs</a>
+                <a href="book-test-ride.html?model=Hunter650" class="btn btn-primary btn-sm">Book Ride</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 2: Expedition 450 -->
+        <article class="bike-card" data-category="adventure" id="expedition">
+          <div class="bike-card-img-wrap" style="aspect-ratio: 16/10;">
+            <span class="bike-card-tag">Adventure Tourer</span>
+            <img src="assets/images/model-expedition-450.jpg" alt="Vanguard Expedition 450" loading="lazy">
+          </div>
+          <div class="bike-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+              <span class="bike-card-subtitle">All-Terrain Expedition</span>
+              <span class="badge badge-green">Tft Nav Screen</span>
+            </div>
+            <h2 class="bike-card-title">Vanguard Expedition 450</h2>
+            <p class="bike-card-desc">
+              Forged for extreme conditions. Powered by our high-compression liquid-cooled 452cc engine with Showa long-travel suspension, switchable rear ABS, and 21-inch front spoke wheel.
+            </p>
+
+            <div class="bike-card-specs" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 1.5rem;">
+              <div class="spec-mini">
+                <div class="spec-mini-val">452 cc</div>
+                <div class="spec-mini-lbl">Liquid Cooled</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">40.2 HP</div>
+                <div class="spec-mini-lbl">Power</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">40.0 Nm</div>
+                <div class="spec-mini-lbl">Torque</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">220 mm</div>
+                <div class="spec-mini-lbl">Ground Clr</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 0.9rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary);">
+              <strong>Standard Features:</strong> Ride-by-wire throttle with Eco & Performance modes, full Google Maps screen mirroring, integrated pannier stays.
+            </div>
+
+            <div class="bike-card-footer">
+              <div>
+                <div class="bike-card-price">₹2,89,000</div>
+                <small style="color: var(--text-muted);">Ex-showroom India / $5,399 US</small>
+              </div>
+              <div style="display: flex; gap: 0.6rem;">
+                <a href="configurator.html?bike=expedition" class="btn btn-secondary btn-sm">Customize</a>
+                <a href="book-test-ride.html?model=Expedition450" class="btn btn-primary btn-sm">Book Ride</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 3: Valkyrie Cruiser 650 -->
+        <article class="bike-card" data-category="cruiser" id="valkyrie">
+          <div class="bike-card-img-wrap" style="aspect-ratio: 16/10;">
+            <span class="bike-card-tag">Highway Cruiser</span>
+            <img src="assets/images/model-valkyrie-cruiser.jpg" alt="Vanguard Valkyrie Cruiser 650" loading="lazy">
+          </div>
+          <div class="bike-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+              <span class="bike-card-subtitle">Boulevard Cruiser</span>
+              <span class="badge badge-copper">Ultra Comfortable</span>
+            </div>
+            <h2 class="bike-card-title">Vanguard Valkyrie Cruiser 650</h2>
+            <p class="bike-card-desc">
+              Low-slung grand cruiser designed for effortless cross-country riding. Features wide pullback handlebars, plush contoured saddle, forward foot controls, and chrome accents.
+            </p>
+
+            <div class="bike-card-specs" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 1.5rem;">
+              <div class="spec-mini">
+                <div class="spec-mini-val">648 cc</div>
+                <div class="spec-mini-lbl">Parallel Twin</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">47.0 HP</div>
+                <div class="spec-mini-lbl">Power</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">52.3 Nm</div>
+                <div class="spec-mini-lbl">Torque</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">740 mm</div>
+                <div class="spec-mini-lbl">Seat Height</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 0.9rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary);">
+              <strong>Standard Features:</strong> USD front forks, inverted suspension, touring windshield mounting points, dual USB fast charger.
+            </div>
+
+            <div class="bike-card-footer">
+              <div>
+                <div class="bike-card-price">₹3,75,000</div>
+                <small style="color: var(--text-muted);">Ex-showroom India / $6,899 US</small>
+              </div>
+              <div style="display: flex; gap: 0.6rem;">
+                <a href="configurator.html?bike=valkyrie" class="btn btn-secondary btn-sm">Customize</a>
+                <a href="book-test-ride.html?model=ValkyrieCruiser" class="btn btn-primary btn-sm">Book Ride</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 4: Rogue Scrambler 400 -->
+        <article class="bike-card" data-category="scrambler" id="rogue">
+          <div class="bike-card-img-wrap" style="aspect-ratio: 16/10;">
+            <span class="bike-card-tag">Urban Scrambler</span>
+            <img src="assets/images/model-rogue-scrambler.jpg" alt="Vanguard Rogue Scrambler 400" loading="lazy">
+          </div>
+          <div class="bike-card-body">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.4rem;">
+              <span class="bike-card-subtitle">Street Brawler / Scrambler</span>
+              <span class="badge badge-copper">Agile & Light</span>
+            </div>
+            <h2 class="bike-card-title">Vanguard Rogue Scrambler 400</h2>
+            <p class="bike-card-desc">
+              Stripped down, aggressive street tracker styling. High-mounted stainless steel exhaust, chunky block pattern tires, trellis frame, and explosive mid-range punch.
+            </p>
+
+            <div class="bike-card-specs" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 1.5rem;">
+              <div class="spec-mini">
+                <div class="spec-mini-val">398 cc</div>
+                <div class="spec-mini-lbl">DOHC Single</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">39.5 HP</div>
+                <div class="spec-mini-lbl">Power</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">37.5 Nm</div>
+                <div class="spec-mini-lbl">Torque</div>
+              </div>
+              <div class="spec-mini">
+                <div class="spec-mini-val">175 kg</div>
+                <div class="spec-mini-lbl">Dry Weight</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 0.9rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--text-secondary);">
+              <strong>Standard Features:</strong> Switchable traction control, slip-and-assist clutch, ribbed tuck-and-roll leather saddle, all-LED illumination.
+            </div>
+
+            <div class="bike-card-footer">
+              <div>
+                <div class="bike-card-price">₹2,25,000</div>
+                <small style="color: var(--text-muted);">Ex-showroom India / $4,299 US</small>
+              </div>
+              <div style="display: flex; gap: 0.6rem;">
+                <a href="configurator.html?bike=rogue" class="btn btn-secondary btn-sm">Customize</a>
+                <a href="book-test-ride.html?model=RogueScrambler" class="btn btn-primary btn-sm">Book Ride</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Side-by-side Comparative Table -->
+  <section style="padding: 4rem 0 6rem; background: #0c0f16; border-top: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Direct Specifications</span>
+        <h2 class="section-title">Fleet <span>Comparison</span></h2>
+      </div>
+
+      <div style="overflow-x: auto; background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+        <table style="width: 100%; border-collapse: collapse; min-width: 700px; text-align: left; font-size: 0.9rem;">
+          <thead>
+            <tr style="border-bottom: 1px solid var(--border-light); background: rgba(0,0,0,0.3);">
+              <th style="padding: 1.2rem; color: var(--accent-copper);">Specification</th>
+              <th style="padding: 1.2rem; color: #fff;">Hunter 650 Twin</th>
+              <th style="padding: 1.2rem; color: #fff;">Expedition 450</th>
+              <th style="padding: 1.2rem; color: #fff;">Valkyrie Cruiser 650</th>
+              <th style="padding: 1.2rem; color: #fff;">Rogue Scrambler 400</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Engine Type</td>
+              <td style="padding: 1rem;">Parallel Twin, 4-stroke, SOHC</td>
+              <td style="padding: 1rem;">Liquid-Cooled, Single, DOHC</td>
+              <td style="padding: 1rem;">Parallel Twin, 4-stroke, SOHC</td>
+              <td style="padding: 1rem;">Liquid-Cooled, Single, 4-Valve</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Displacement</td>
+              <td style="padding: 1rem; color: var(--accent-copper); font-weight: bold;">648 cc</td>
+              <td style="padding: 1rem; color: var(--accent-copper); font-weight: bold;">452 cc</td>
+              <td style="padding: 1rem; color: var(--accent-copper); font-weight: bold;">648 cc</td>
+              <td style="padding: 1rem; color: var(--accent-copper); font-weight: bold;">398 cc</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Max Power</td>
+              <td style="padding: 1rem;">47.4 HP @ 7250 rpm</td>
+              <td style="padding: 1rem;">40.2 HP @ 8000 rpm</td>
+              <td style="padding: 1rem;">47.0 HP @ 7250 rpm</td>
+              <td style="padding: 1rem;">39.5 HP @ 8000 rpm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Max Torque</td>
+              <td style="padding: 1rem;">52.3 Nm @ 5150 rpm</td>
+              <td style="padding: 1rem;">40.0 Nm @ 5500 rpm</td>
+              <td style="padding: 1rem;">52.3 Nm @ 5150 rpm</td>
+              <td style="padding: 1rem;">37.5 Nm @ 6500 rpm</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Fuel Tank</td>
+              <td style="padding: 1rem;">13.7 Litres</td>
+              <td style="padding: 1rem;">17.0 Litres</td>
+              <td style="padding: 1rem;">15.7 Litres</td>
+              <td style="padding: 1rem;">12.5 Litres</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Kerb Weight</td>
+              <td style="padding: 1rem;">202 kg</td>
+              <td style="padding: 1rem;">196 kg</td>
+              <td style="padding: 1rem;">241 kg</td>
+              <td style="padding: 1rem;">179 kg</td>
+            </tr>
+            <tr>
+              <td style="padding: 1rem; color: var(--text-secondary); font-weight: 600;">Starting Price</td>
+              <td style="padding: 1rem; font-weight: bold; color: #fff;">₹3,49,000</td>
+              <td style="padding: 1rem; font-weight: bold; color: #fff;">₹2,89,000</td>
+              <td style="padding: 1rem; font-weight: bold; color: #fff;">₹3,75,000</td>
+              <td style="padding: 1rem; font-weight: bold; color: #fff;">₹2,25,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Modal Trigger Section -->
+  <section style="background: var(--bg-card); padding: 4.5rem 0; border-top: 1px solid var(--border-subtle); text-align: center;">
+    <div class="container" style="max-width: 720px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2rem; text-transform: uppercase; margin-bottom: 1rem;">
+        Need Help Selecting Your <span>Machine?</span>
+      </h2>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+        Speak directly with a Vanguard certified test rider. We will assess your riding style, highway vs city ratio, and recommend the ideal motorcycle configuration.
+      </p>
+      <form data-lead-form data-lead-type="Fleet Consultation Request" style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+        <input type="text" name="name" placeholder="Full Name" required class="form-control" style="width: 220px;">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="form-control" style="width: 200px;">
+        <button type="submit" class="btn btn-primary">Request Rider Callback</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1.2rem;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <div class="brand-text">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-tagline">Motorcycles</span>
+            </div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7;">Pure motorcycling crafted with soul since 1948.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Models</h4>
+          <ul class="footer-links">
+            <li><a href="model-detail.html">Hunter 650 Twin</a></li>
+            <li><a href="motorcycles.html#expedition">Expedition 450</a></li>
+            <li><a href="motorcycles.html#valkyrie">Valkyrie Cruiser 650</a></li>
+            <li><a href="motorcycles.html#rogue">Rogue Scrambler 400</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Actions</h4>
+          <ul class="footer-links">
+            <li><a href="book-test-ride.html">Book a Test Ride</a></li>
+            <li><a href="configurator.html">Customizer 3D</a></li>
+            <li><a href="dealers.html">Find Dealer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Heritage</a></li>
+            <li><a href="service.html">Service Care</a></li>
+            <li><a href="rides-community.html">Rides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Concierge</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Direct showroom hotline:</p>
+          <div style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 800; color: var(--accent-copper);">1800-209-8800</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard Motorcycles. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;"><a href="about.html">Privacy</a><a href="about.html">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Category tabs filter script
+    const tabs = document.querySelectorAll('#modelFilterTabs .cat-tab');
+    const cards = document.querySelectorAll('#motorcyclesFleetList .bike-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

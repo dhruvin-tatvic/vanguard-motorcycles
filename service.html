@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service, Maintenance & 24x7 RSA | Vanguard Motorcycles</title>
+  <meta name="description" content="Book authorized service for your Vanguard motorcycle. Factory trained mechanics, genuine parts, pick-and-drop, and 24x7 pan-India roadside assistance hotline.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+        <div class="brand-text">
+          <span class="brand-name">Vanguard</span>
+          <span class="brand-tagline">Motorcycles</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="motorcycles.html" class="nav-link">Motorcycles</a>
+        <a href="model-detail.html" class="nav-link">Hunter 650</a>
+        <a href="configurator.html" class="nav-link">Customizer</a>
+        <a href="rides-community.html" class="nav-link">Rides & Events</a>
+        <a href="apparel-accessories.html" class="nav-link">Gear</a>
+        <a href="dealers.html" class="nav-link">Dealers</a>
+        <a href="service.html" class="nav-link active">Service</a>
+        <a href="about.html" class="nav-link">Heritage</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="book-test-ride.html" class="btn btn-primary btn-sm">Book Test Ride</a>
+        <button class="mobile-menu-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section style="background: radial-gradient(circle at 50% 20%, #1c2636 0%, #0a0c10 80%); padding: 4.5rem 0 3rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <span class="section-tag">Pure Maintenance & Care</span>
+      <h1 class="section-title">Factory <span>Service & Support</span></h1>
+      <p class="section-desc" style="margin: 0.8rem auto 2rem;">Engineered by craftsmen, maintained by factory-certified master technicians with genuine OEM components.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#bookService" class="btn btn-primary">Book Periodic Service</a>
+        <a href="#rsaSection" class="btn btn-secondary">24x7 Roadside Assistance (RSA)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Booking Lead Form Section -->
+  <section id="bookService" style="padding: 5rem 0; background: var(--bg-dark);">
+    <div class="container" style="max-width: 980px;">
+      <div class="grid-2" style="grid-template-columns: 1.3fr 0.9fr; gap: 2.5rem; align-items: flex-start;">
+        
+        <!-- Form -->
+        <div class="lead-form-container">
+          <h2 style="font-family: var(--font-heading); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 1.2rem;">
+            Schedule A <span>Service Appointment</span>
+          </h2>
+
+          <form data-lead-form data-lead-type="Periodic Service Booking">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Motorcycle Model *</label>
+                <select name="bikeModel" class="form-control" required>
+                  <option value="Hunter 650 Twin">Hunter 650 Twin</option>
+                  <option value="Expedition 450">Expedition 450</option>
+                  <option value="Valkyrie Cruiser 650">Valkyrie Cruiser 650</option>
+                  <option value="Rogue Scrambler 400">Rogue Scrambler 400</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Registration / Plate No. *</label>
+                <input type="text" name="vehicleNumber" placeholder="e.g. DL 01 AB 1234" required class="form-control">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Current Odometer (KM)</label>
+                <input type="number" name="odometer" placeholder="e.g. 5200" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Service Type *</label>
+                <select name="serviceType" class="form-control" required>
+                  <option value="1st Free Service (500 km / 45 days)">1st Free Service (500 km)</option>
+                  <option value="2nd Free Service (5000 km / 6 mos)">2nd Free Service (5,000 km)</option>
+                  <option value="Major Annual Overhaul (10,000 km)">Major Annual Overhaul (10,000 km)</option>
+                  <option value="General Checkup / Oil & Filter Change">Oil & Filter Express Care</option>
+                  <option value="Brake Pad & Chain Maintenance">Brake & Drivetrain Service</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input type="date" name="preferredDate" class="form-control" required id="serviceDateInput">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Service Workshop City *</label>
+                <select name="serviceCity" class="form-control" required>
+                  <option value="Delhi NCR Hub">Delhi NCR Service Hub</option>
+                  <option value="Mumbai Bandra">Mumbai Bandra Workshop</option>
+                  <option value="Bengaluru Indiranagar">Bengaluru Indiranagar Care</option>
+                  <option value="Chennai Anna Salai">Chennai Factory Bay</option>
+                  <option value="Hyderabad Jubilee">Hyderabad Service Center</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Owner Name *</label>
+                <input type="text" name="ownerName" placeholder="Your Name" required class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Mobile Number *</label>
+                <input type="tel" name="phone" placeholder="10-digit mobile" required class="form-control" pattern="[0-9]{10}">
+              </div>
+            </div>
+
+            <label class="custom-checkbox">
+              <input type="checkbox" name="doorstepPickup">
+              <span>Avail Contactless Doorstep Bike Pickup & Drop (Flat ₹350 within 15 km).</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1.5rem;">
+              Confirm Service Booking
+            </button>
+          </form>
+        </div>
+
+        <!-- Service Care Benefits -->
+        <div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 2rem; margin-bottom: 2rem;">
+            <span class="badge badge-green" style="margin-bottom: 0.8rem;">Factory Assurance</span>
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 1rem; color: #fff;">
+              The Vanguard Guarantee
+            </h3>
+            <ul style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.88rem; color: var(--text-secondary);">
+              <li style="display: flex; gap: 0.6rem;">
+                <span style="color: var(--accent-copper); font-weight: bold;">&#10003;</span>
+                <span><strong>100% Genuine Spares:</strong> Direct from manufacturing plant with 1-year parts warranty.</span>
+              </li>
+              <li style="display: flex; gap: 0.6rem;">
+                <span style="color: var(--accent-copper); font-weight: bold;">&#10003;</span>
+                <span><strong>Synthetic Ester Oil:</strong> High-temperature stability formulated specifically for air/oil cooled twins.</span>
+              </li>
+              <li style="display: flex; gap: 0.6rem;">
+                <span style="color: var(--accent-copper); font-weight: bold;">&#10003;</span>
+                <span><strong>Diagnostic Dyno Report:</strong> Digital health printout evaluating ECU mapping and emissions.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background: linear-gradient(145deg, #1f140e 0%, #12161f 100%); border: 1px solid var(--border-copper); border-radius: var(--radius-md); padding: 1.8rem;">
+            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: #fff; text-transform: uppercase; margin-bottom: 0.6rem;">
+              Emergency Assistance?
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+              Toll-Free 24x7 Roadside Hotline across 500+ highway corridors in India.
+            </p>
+            <a href="tel:18002098800" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--accent-copper); display: block; margin-bottom: 1rem;">
+              1800-209-8800
+            </a>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">Average response dispatch time: 42 minutes.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 24x7 Roadside Assistance SOS Lead Section -->
+  <section id="rsaSection" style="padding: 5rem 0; background: #0c0e14; border-top: 1px solid var(--border-subtle);">
+    <div class="container" style="max-width: 820px;">
+      <div class="section-header text-center">
+        <span class="section-tag" style="color: #ef4444;">Emergency SOS Support</span>
+        <h2 class="section-title">24x7 Roadside <span>Assistance (RSA)</span></h2>
+        <p class="section-desc">Stranded on highway or experiencing an electrical fault? Dispatch our nearest mobile service van immediately.</p>
+      </div>
+
+      <div class="lead-form-container" style="border-color: rgba(239, 68, 68, 0.4);">
+        <form data-lead-form data-lead-type="Emergency 24x7 RSA SOS Request">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" style="color: #ef4444;">Breakdown Issue Type *</label>
+              <select name="issueType" class="form-control" required>
+                <option value="Flat Tyre / Puncture Support">Flat Tyre / Tube Puncture</option>
+                <option value="Battery Dead / Jumpstart Needed">Battery Dead / Won't Crank</option>
+                <option value="Fuel Exhaustion Emergency">Out of Fuel (Emergency 5L delivery)</option>
+                <option value="Mechanical Breakdown / Flatbed Towing Needed">Mechanical Breakdown / Needs Tow Truck</option>
+                <option value="Accident Incident / Medical & Tow">Accident Towing & Assistance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Rider Mobile Number *</label>
+              <input type="tel" name="phone" placeholder="Where rescue agent can call" required class="form-control" pattern="[0-9]{10}">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Breakdown Location / Landmark / Highway Milestone *</label>
+            <input type="text" name="locationDetails" placeholder="e.g. NH-48 Km 64 near Manesar toll, or GPS pin" required class="form-control">
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Rider Full Name *</label>
+              <input type="text" name="riderName" placeholder="Your Name" required class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Motorcycle Model & Plate</label>
+              <input type="text" name="vehicleDetails" placeholder="e.g. Hunter 650 - DL04CD9999" required class="form-control">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); border: none; box-shadow: 0 4px 20px rgba(220, 38, 38, 0.5);">
+            Dispatch Nearest RSA Rescue Van (SOS)
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vanguard Motorcycles. Authorized Customer Care & Roadside Assistance.</div>
+        <div><a href="index.html">Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const nextWeek = new Date();
+    nextWeek.setDate(nextWeek.getDate() + 2);
+    const sDate = document.getElementById('serviceDateInput');
+    if (sDate) {
+      sDate.value = nextWeek.toISOString().split('T')[0];
+      sDate.min = new Date().toISOString().split('T')[0];
+    }
+  </script>
+</body>
+</html>
