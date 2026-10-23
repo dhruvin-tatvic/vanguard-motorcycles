@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heritage & Philosophy | Vanguard Motorcycles</title>
-  <meta name="description" content="Discover Vanguard's motorcycling heritage since 1948. Born of iron and crafted for the pure ride across generations of riders. Contact us or enquire about corporate partnerships.">
+  <title>Heritage & Contact | Vanguard Motorcycles</title>
+  <meta name="description" content="Discover Vanguard's motorcycling heritage since 1948. Contact our corporate offices or inquire about dealership partnerships.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .timeline {
       position: relative;
-      max-width: 800px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 2rem 0;
+      padding: 1.5rem 0;
     }
     .timeline::before {
       content: '';
@@ -26,7 +26,7 @@
     .timeline-item {
       position: relative;
       width: 50%;
-      padding: 1.5rem 2rem;
+      padding: 1rem 2rem;
     }
     .timeline-item:nth-child(odd) {
       left: 0;
@@ -38,37 +38,33 @@
     }
     .timeline-dot {
       position: absolute;
-      top: 2rem;
-      width: 16px;
-      height: 16px;
+      top: 1.5rem;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
-      background: var(--accent-copper);
-      border: 3px solid #0a0c10;
-      box-shadow: 0 0 10px rgba(226, 88, 34, 0.8);
+      background: var(--brand-red);
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 0 1px var(--brand-red);
     }
     .timeline-item:nth-child(odd) .timeline-dot {
-      right: -8px;
+      right: -7px;
     }
     .timeline-item:nth-child(even) .timeline-dot {
-      left: -8px;
+      left: -7px;
     }
     .timeline-year {
       font-family: var(--font-heading);
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      color: var(--accent-copper);
-      margin-bottom: 0.3rem;
+      color: var(--brand-red);
+      margin-bottom: 0.2rem;
     }
     .timeline-content {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      padding: 1.4rem;
-      transition: all var(--transition-fast);
-    }
-    .timeline-content:hover {
-      border-color: var(--accent-copper);
-      transform: translateY(-2px);
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      box-shadow: var(--shadow-subtle);
     }
     @media (max-width: 768px) {
       .timeline::before {
@@ -77,11 +73,11 @@
       .timeline-item {
         width: 100%;
         left: 0 !important;
-        padding-left: 50px;
+        padding-left: 45px;
         text-align: left !important;
       }
       .timeline-item .timeline-dot {
-        left: 12px !important;
+        left: 13px !important;
       }
     }
   </style>
@@ -119,105 +115,65 @@
   </header>
 
   <!-- Page Header -->
-  <section style="background: radial-gradient(circle at 50% 20%, #192434 0%, #0a0c10 80%); padding: 5rem 0 3.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
-    <div class="container" style="max-width: 800px;">
+  <section style="background: #ffffff; padding: 4rem 0 2.5rem; text-align: center; border-bottom: 1px solid var(--border-light);">
+    <div class="container" style="max-width: 760px;">
       <span class="section-tag">Since 1948</span>
-      <h1 class="section-title">Born of Iron. <br><span>Crafted for the Pure Ride.</span></h1>
-      <p class="section-desc" style="margin: 1.2rem auto 0; font-size: 1.1rem; line-height: 1.8;">
-        For over seven decades, Vanguard has stood unyielding against disposable trends. We build motorcycles with weight, character, and mechanical honesty—machines meant to outlive generations.
+      <h1 class="section-title">Built of Iron. <br><span>Crafted for the Pure Ride.</span></h1>
+      <p class="section-desc" style="margin: 0.8rem auto 0; font-size: 1rem; line-height: 1.7;">
+        For over seven decades, Vanguard has built motorcycles with weight, character, and mechanical honesty—machines meant to outlive trends.
       </p>
     </div>
   </section>
 
-  <!-- Philosophy Grid -->
-  <section style="padding: 5rem 0; background: var(--bg-dark);">
+  <!-- Timeline -->
+  <section style="padding: 4.5rem 0; background: var(--bg-light);">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">Core Tenets</span>
-        <h2 class="section-title">The Three <span>Pillars</span></h2>
-      </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 900; color: var(--accent-copper); line-height: 1; margin-bottom: 0.8rem;">01</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.8rem; text-transform: uppercase;">Mechanical Character</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-            We believe an engine should talk to you. The steady, hypnotic 270-degree crankshaft cadence and rhythmic exhaust pulse cannot be replicated by artificial software.
-          </p>
-        </div>
-
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 900; color: var(--accent-copper); line-height: 1; margin-bottom: 0.8rem;">02</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.8rem; text-transform: uppercase;">True Repairability</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-            Every Vanguard motorcycle is designed so a rider stranded on a remote Himalayan pass can adjust valves, swap spark plugs, and torque axle bolts with simple hand tools.
-          </p>
-        </div>
-
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 900; color: var(--accent-copper); line-height: 1; margin-bottom: 0.8rem;">03</div>
-          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.8rem; text-transform: uppercase;">The Rider Brotherhood</h3>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-            You don't just purchase a motorcycle; you earn entry into a worldwide fraternity of riders who stop on the highway whenever a fellow Vanguard is parked with blinkers on.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Heritage Timeline -->
-  <section style="padding: 5rem 0; background: #0c0f16; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="section-tag">Historical Lineage</span>
-        <h2 class="section-title">Seven Decades Of <span>Speed & Soul</span></h2>
+        <span class="section-tag">Heritage</span>
+        <h2 class="section-title">Seven Decades of <span>Motorcycling</span></h2>
       </div>
 
       <div class="timeline">
-        <!-- Event 1 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-year">1948</div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin-bottom: 0.4rem;">The Foundry in Redditch</h4>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
-              Vanguard begins production of cast-iron single cylinder 350cc roadsters, renowned for unbreakable endurance across post-war Britain.
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--brand-black); margin-bottom: 0.3rem;">The Redditch Workshop</h4>
+            <p style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.5;">
+              Vanguard begins production of cast-iron single cylinder roadsters renowned for endurance and simplicity.
             </p>
           </div>
         </div>
 
-        <!-- Event 2 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-year">1964</div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin-bottom: 0.4rem;">Isle of Man TT Podium</h4>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
-              The Vanguard 500 GP racer averages 102.4 MPH on the Snaefell Mountain Course, cementing our reputation for high-speed stability and frame balance.
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--brand-black); margin-bottom: 0.3rem;">Isle of Man Podium</h4>
+            <p style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.5;">
+              The Vanguard 500 GP racer achieves podium speeds on the Mountain Course, cementing our chassis pedigree.
             </p>
           </div>
         </div>
 
-        <!-- Event 3 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-year">2008</div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin-bottom: 0.4rem;">Global Tech Centre at Bruntingthorpe</h4>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
-              Establishment of our state-of-the-art engineering center combining British chassis design with high-volume precision manufacturing in India.
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--brand-black); margin-bottom: 0.3rem;">Global Tech Centre</h4>
+            <p style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.5;">
+              Establishment of modern engineering facilities combining British chassis design with high-volume precision manufacturing in India.
             </p>
           </div>
         </div>
 
-        <!-- Event 4 -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-year">2026</div>
-            <h4 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin-bottom: 0.4rem;">The Twin-Cylinder Renaissance</h4>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
-              Launch of the acclaimed 648cc parallel-twin engine platform, winning global motorcycle of the year honours in 14 countries.
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; color: var(--brand-black); margin-bottom: 0.3rem;">The Twin-Cylinder Platform</h4>
+            <p style="color: var(--text-muted); font-size: 0.82rem; line-height: 1.5;">
+              Launch of the acclaimed 648cc parallel-twin engine platform across cafe racer, cruiser, and scrambler models.
             </p>
           </div>
         </div>
@@ -225,45 +181,43 @@
     </div>
   </section>
 
-  <!-- Contact Us / Corporate Lead Form -->
-  <section id="contact" style="padding: 5rem 0; background: var(--bg-dark);">
-    <div class="container" style="max-width: 960px;">
+  <!-- Contact Us / Corporate Form -->
+  <section id="contact" style="padding: 4.5rem 0; background: #ffffff; border-top: 1px solid var(--border-light);">
+    <div class="container" style="max-width: 900px;">
       <div class="grid-2" style="align-items: flex-start; gap: 3rem;">
         
-        <!-- Info Column -->
         <div>
-          <span class="section-tag">Direct Factory Connection</span>
-          <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 1.2rem;">Get In <span>Touch</span></h2>
-          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem;">
-            Whether you are inquiring about corporate partnerships, press coverage, rider sponsorships, or customer support, our concierge team is at your disposal.
+          <span class="section-tag">Direct Connection</span>
+          <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Get In <span>Touch</span></h2>
+          <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 1.8rem;">
+            For corporate inquiries, media and press access, or rider club sponsorships, please submit your message.
           </p>
 
-          <div style="display: flex; flex-direction: column; gap: 1.2rem; font-size: 0.9rem; color: var(--text-secondary);">
+          <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.88rem; color: var(--text-main);">
             <div>
-              <strong style="color: #fff; display: block; font-family: var(--font-heading); text-transform: uppercase;">Headquarters</strong>
-              Vanguard House, St. George Industrial Works, Redditch B98 7AB, United Kingdom
+              <strong style="display: block; font-family: var(--font-heading);">Corporate Office</strong>
+              Vanguard House, Redditch Industrial Park, United Kingdom
             </div>
             <div>
-              <strong style="color: #fff; display: block; font-family: var(--font-heading); text-transform: uppercase;">Asia-Pacific Tech Hub</strong>
-              Vanguard Tech Campus, SIPCOT Industrial Park, Sriperumbudur, Chennai - 602105, India
+              <strong style="display: block; font-family: var(--font-heading);">Asia-Pacific Tech Hub</strong>
+              SIPCOT Industrial Estate, Sriperumbudur, Chennai - 602105, India
             </div>
             <div>
-              <strong style="color: #fff; display: block; font-family: var(--font-heading); text-transform: uppercase;">Press & Media Email</strong>
-              media@vanguardmotorcycles.com
+              <strong style="display: block; font-family: var(--font-heading);">Toll-Free Helpline</strong>
+              1800-209-8800
             </div>
           </div>
         </div>
 
-        <!-- Form Column -->
+        <!-- Form -->
         <div class="lead-form-container">
-          <form data-lead-form data-lead-type="Corporate & General Inquiry">
+          <form data-lead-form data-lead-type="Corporate & Contact Inquiry">
             <div class="form-group">
-              <label class="form-label">Inquiry Nature *</label>
+              <label class="form-label">Inquiry Subject *</label>
               <select name="inquiryType" class="form-control" required>
-                <option value="Customer Feedback / Support">Customer Feedback / Support</option>
-                <option value="Press / Media & Review Units">Press / Media & Review Units</option>
-                <option value="Sponsorship & Club Partnerships">Sponsorship & Club Partnerships</option>
-                <option value="Fleet / Institutional Order">Fleet / Institutional Purchase</option>
+                <option value="Customer Support">Customer Support</option>
+                <option value="Media & Press Inquiry">Media & Press Inquiry</option>
+                <option value="Rider Club / Sponsorship">Rider Club / Sponsorship</option>
                 <option value="General Question">General Question</option>
               </select>
             </div>
@@ -275,22 +229,22 @@
 
             <div class="form-grid-2">
               <div class="form-group">
-                <label class="form-label">Email *</label>
+                <label class="form-label">Email Address *</label>
                 <input type="email" name="email" placeholder="name@domain.com" required class="form-control">
               </div>
               <div class="form-group">
-                <label class="form-label">Mobile Number</label>
+                <label class="form-label">Phone Number</label>
                 <input type="tel" name="phone" placeholder="10-digit mobile" class="form-control">
               </div>
             </div>
 
             <div class="form-group">
-              <label class="form-label">Message / Details *</label>
-              <textarea name="message" rows="4" placeholder="How can our factory team assist you?" required class="form-control"></textarea>
+              <label class="form-label">Message *</label>
+              <textarea name="message" rows="4" placeholder="How can our team help you?" required class="form-control"></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-              Send Message to Factory
+              Send Message
             </button>
           </form>
         </div>
@@ -303,8 +257,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-bottom">
-        <div>&copy; 2026 Vanguard Motorcycles. Preserving the Pure Ride.</div>
-        <div><a href="index.html">Back to Home</a></div>
+        <div>&copy; 2026 Vanguard Motorcycles. All rights reserved.</div>
+        <div><a href="index.html">Home</a></div>
       </div>
     </div>
   </footer>

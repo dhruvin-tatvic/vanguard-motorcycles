@@ -177,19 +177,19 @@ function showLeadSuccessModal(lead) {
       <div class="modal-card">
         <button class="modal-close-btn" onclick="closeModal('leadSuccessModal')">&times;</button>
         <div class="success-icon-badge">&#10003;</div>
-        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 0.5rem; text-transform: uppercase;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.4rem; text-transform: uppercase;">
           Request Confirmed
         </h3>
-        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
-          Thank you for choosing Vanguard Motorcycles. Your enquiry has been routed to our concierge team.
+        <p style="color: var(--text-muted); margin-bottom: 1.2rem; font-size: 0.92rem;">
+          Thank you for choosing Vanguard Motorcycles. Your enquiry has been received.
         </p>
-        <div style="background: rgba(0,0,0,0.4); border: 1px dashed var(--border-copper); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; text-align: left;">
-          <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px;">Booking Reference ID</div>
-          <div id="modalLeadRefId" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: var(--accent-copper);"></div>
-          <div id="modalLeadType" style="font-size: 0.85rem; color: #ffffff; margin-top: 4px;"></div>
+        <div style="background: var(--bg-light); border: 1.5px dashed #cbd5e1; border-radius: 6px; padding: 1rem; margin-bottom: 1.2rem; text-align: left;">
+          <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">Booking Reference ID</div>
+          <div id="modalLeadRefId" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 900; color: var(--brand-red);"></div>
+          <div id="modalLeadType" style="font-size: 0.85rem; color: var(--brand-black); font-weight: 600; margin-top: 4px;"></div>
         </div>
-        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.8rem;">
-          Our certified relationship manager will contact you within 2 hours to confirm details and slot schedule.
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+          Our authorized dealership representative will contact you shortly with your confirmation details.
         </p>
         <button class="btn btn-primary" style="width: 100%;" onclick="closeModal('leadSuccessModal')">
           Done & Return to Site
@@ -345,12 +345,12 @@ function renderLeadsList() {
   let html = `
     <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
       <thead>
-        <tr style="border-bottom: 1px solid var(--border-light); color: var(--accent-copper); text-align: left;">
-          <th style="padding: 8px;">Ref ID</th>
-          <th style="padding: 8px;">Type</th>
-          <th style="padding: 8px;">Name / Details</th>
-          <th style="padding: 8px;">Contact</th>
-          <th style="padding: 8px;">Timestamp</th>
+        <tr style="border-bottom: 2px solid var(--border-light); color: var(--brand-black); text-align: left; font-weight: 700;">
+          <th style="padding: 10px 8px;">Ref ID</th>
+          <th style="padding: 10px 8px;">Type</th>
+          <th style="padding: 10px 8px;">Name / Details</th>
+          <th style="padding: 10px 8px;">Contact</th>
+          <th style="padding: 10px 8px;">Timestamp</th>
         </tr>
       </thead>
       <tbody>
@@ -364,11 +364,11 @@ function renderLeadsList() {
     const time = new Date(l.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
     html += `
-      <tr style="border-bottom: 1px solid var(--border-subtle);">
-        <td style="padding: 10px 8px; font-weight: 700; color: #fff;">${l.id}</td>
-        <td style="padding: 10px 8px;"><span class="badge badge-copper">${l.type}</span></td>
-        <td style="padding: 10px 8px; color: var(--text-secondary);">${name} <br><small style="color:var(--text-muted);">${summary}</small></td>
-        <td style="padding: 10px 8px; color: var(--text-secondary);">${contact}</td>
+      <tr style="border-bottom: 1px solid var(--border-light);">
+        <td style="padding: 10px 8px; font-weight: 700; color: var(--brand-black);">${l.id}</td>
+        <td style="padding: 10px 8px;"><span class="badge badge-red">${l.type}</span></td>
+        <td style="padding: 10px 8px; color: var(--text-main); font-weight: 600;">${name} <br><small style="color:var(--text-muted); font-weight:400;">${summary}</small></td>
+        <td style="padding: 10px 8px; color: var(--text-muted);">${contact}</td>
         <td style="padding: 10px 8px; color: var(--text-muted); font-size: 0.78rem;">${time}</td>
       </tr>
     `;

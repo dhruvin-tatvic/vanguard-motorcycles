@@ -3,32 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rides & Community Expeditions | Vanguard Motorcycles</title>
-  <meta name="description" content="Join the Vanguard Brotherhood. Trans-Himalayan Odyssey, coastal circuits, and weekend breakfast rides. Register for upcoming expeditions.">
+  <title>Rides & Expeditions | Vanguard Motorcycles</title>
+  <meta name="description" content="Join the Vanguard brotherhood. Trans-Himalayan Odyssey, coastal circuits, and weekend breakfast rides.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .ride-event-card {
-      background: var(--bg-card);
+      background: #ffffff;
       border: 1px solid var(--border-light);
       border-radius: var(--radius-md);
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: all var(--transition-fast);
+      box-shadow: var(--shadow-subtle);
+      transition: all var(--transition);
     }
     .ride-event-card:hover {
-      border-color: var(--accent-copper);
-      transform: translateY(-5px);
-      box-shadow: var(--glass-shadow);
+      box-shadow: var(--shadow-card);
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
     }
     .ride-meta-strip {
       display: flex;
       gap: 1.5rem;
-      padding: 0.8rem 1.4rem;
-      background: rgba(0,0,0,0.4);
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 0.8rem;
-      color: var(--text-secondary);
+      padding: 0.8rem 1.2rem;
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.82rem;
+      color: #334155;
       flex-wrap: wrap;
     }
   </style>
@@ -66,114 +67,116 @@
   </header>
 
   <!-- Hero Feature -->
-  <section style="position: relative; padding: 7rem 0 5rem; background: linear-gradient(180deg, rgba(10,12,16,0.5) 0%, #0a0c10 100%), url('assets/images/community-himalaya-ride.jpg') center/cover no-repeat; border-bottom: 1px solid var(--border-subtle);">
-    <div class="container" style="position: relative; z-index: 2;">
-      <div style="max-width: 650px;">
-        <span class="badge badge-copper" style="margin-bottom: 1rem;">Flagship Expedition 2027</span>
-        <h1 style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 900; text-transform: uppercase; line-height: 1.1; margin-bottom: 1.2rem;">
-          Trans-Himalayan <br><span style="color: var(--accent-copper);">Odyssey</span>
-        </h1>
-        <p style="font-size: 1.1rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 2rem;">
-          14 days. 2,400 kilometers. Conquer the legendary Rohtang, Baralacha La, and Khardung La at 17,982 ft. Limited to 30 certified Vanguard riders.
-        </p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="#registerSection" class="btn btn-primary btn-lg">Register for Odyssey</a>
-          <a href="#upcomingRides" class="btn btn-secondary btn-lg">Browse All Rides</a>
+  <section style="background: var(--brand-black); color: #ffffff; padding: 5rem 0 4rem; border-bottom: 3px solid var(--brand-red);">
+    <div class="container">
+      <div class="grid-2" style="align-items: center; gap: 3rem;">
+        <div>
+          <span class="badge badge-red" style="margin-bottom: 0.8rem;">Flagship Expedition 2027</span>
+          <h1 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 900; text-transform: uppercase; line-height: 1.1; margin-bottom: 1rem;">
+            Trans-Himalayan <br><span style="color: var(--brand-red);">Odyssey</span>
+          </h1>
+          <p style="font-size: 1.05rem; color: #94a3b8; line-height: 1.6; margin-bottom: 1.8rem;">
+            14 days. 2,400 kilometers. Cross high mountain passes including Khardung La at 17,982 ft. Supported by full factory mechanical convoy and medical team.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#registerSection" class="btn btn-primary btn-lg">Register for Odyssey</a>
+            <a href="#upcomingRides" class="btn btn-outline btn-lg" style="color:#fff; border-color:#fff;">Browse All Rides</a>
+          </div>
+        </div>
+        <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.5);">
+          <img src="assets/images/community-himalaya-ride.jpg" alt="Trans-Himalayan Odyssey Riders">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Upcoming Rides Grid -->
-  <section id="upcomingRides" style="padding: 5rem 0; background: var(--bg-dark);">
+  <section id="upcomingRides" style="padding: 4.5rem 0; background: var(--bg-light);">
     <div class="container">
       <div class="section-header text-center">
-        <span class="section-tag">Curated Expeditions</span>
+        <span class="section-tag">Expeditions</span>
         <h2 class="section-title">Upcoming <span>Ride Calendar</span></h2>
-        <p class="section-desc">Backed by factory service trucks, paramedic doctors, and seasoned ride marshals.</p>
+        <p class="section-desc">Backed by factory service trucks, paramedic doctors, and certified route marshals.</p>
       </div>
 
       <div class="grid-3">
         <!-- Ride 1 -->
         <article class="ride-event-card">
-          <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;">
+          <div style="position: relative; aspect-ratio: 16/10; overflow: hidden;">
             <img src="assets/images/community-himalaya-ride.jpg" alt="Trans-Himalayan Odyssey" style="width: 100%; height: 100%; object-fit: cover;">
-            <span class="badge badge-copper" style="position: absolute; top: 12px; right: 12px;">High Altitude</span>
+            <span class="badge badge-red" style="position: absolute; top: 12px; right: 12px;">Himalayas</span>
           </div>
           <div class="ride-meta-strip">
             <div><strong>Dates:</strong> June 12 – 26, 2027</div>
             <div><strong>Distance:</strong> 2,400 KM</div>
-            <div><strong>Difficulty:</strong> Advanced</div>
           </div>
-          <div style="padding: 1.6rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--brand-black); margin-bottom: 0.5rem;">
               Trans-Himalayan Odyssey
             </h3>
-            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.4rem;">
-              The ultimate high-altitude pilgrimage across Ladakh and Spiti. Unpaved riverbeds, switchbacks, and glacial vistas.
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.2rem;">
+              The high-altitude pilgrimage across Ladakh and Spiti. Unpaved riverbeds, mountain switchbacks, and alpine vistas.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
               <div>
-                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Registration Fee</div>
-                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #fff;">₹65,000 <small style="font-size:0.75rem; color:var(--text-muted);">/ rider</small></div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Fee</div>
+                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--brand-black);">₹ 65,000</div>
               </div>
-              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Trans-Himalayan Odyssey 2027', '₹65,000')">Join Ride</button>
+              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Trans-Himalayan Odyssey 2027')">Join</button>
             </div>
           </div>
         </article>
 
         <!-- Ride 2 -->
         <article class="ride-event-card">
-          <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;">
+          <div style="position: relative; aspect-ratio: 16/10; overflow: hidden;">
             <img src="assets/images/model-valkyrie-cruiser.jpg" alt="Coastal Highway Thunder" style="width: 100%; height: 100%; object-fit: cover;">
-            <span class="badge badge-green" style="position: absolute; top: 12px; right: 12px;">Cruiser Friendly</span>
+            <span class="badge badge-green" style="position: absolute; top: 12px; right: 12px;">Coastal</span>
           </div>
           <div class="ride-meta-strip">
             <div><strong>Dates:</strong> August 18 – 22, 2027</div>
             <div><strong>Distance:</strong> 950 KM</div>
-            <div><strong>Difficulty:</strong> Moderate</div>
           </div>
-          <div style="padding: 1.6rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--brand-black); margin-bottom: 0.5rem;">
               Konkan Coastal Highway Thunder
             </h3>
-            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.4rem;">
-              Ride along the Arabian Sea cliff roads from Mumbai through Ratnagiri to South Goa. Coastal seafood feasts and beach bonfire campouts.
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.2rem;">
+              Ride along the Arabian Sea cliff roads from Mumbai through Ratnagiri to South Goa with beach campouts.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
               <div>
-                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Registration Fee</div>
-                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #fff;">₹22,500 <small style="font-size:0.75rem; color:var(--text-muted);">/ rider</small></div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Fee</div>
+                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--brand-black);">₹ 22,500</div>
               </div>
-              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Konkan Coastal Highway Thunder', '₹22,500')">Join Ride</button>
+              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Konkan Coastal Highway Thunder')">Join</button>
             </div>
           </div>
         </article>
 
         <!-- Ride 3 -->
         <article class="ride-event-card">
-          <div style="position: relative; aspect-ratio: 16/9; overflow: hidden;">
-            <img src="assets/images/model-rogue-scrambler.jpg" alt="Weekend Breakfast Rumble" style="width: 100%; height: 100%; object-fit: cover;">
-            <span class="badge badge-copper" style="position: absolute; top: 12px; right: 12px;">City Chapter</span>
+          <div style="position: relative; aspect-ratio: 16/10; overflow: hidden;">
+            <img src="assets/images/model-rogue-scrambler.jpg" alt="Sunday Breakfast Rumble" style="width: 100%; height: 100%; object-fit: cover;">
+            <span class="badge badge-red" style="position: absolute; top: 12px; right: 12px;">City Chapter</span>
           </div>
           <div class="ride-meta-strip">
-            <div><strong>Schedule:</strong> Every 2nd Sunday</div>
+            <div><strong>Schedule:</strong> 2nd & 4th Sunday</div>
             <div><strong>Distance:</strong> 120 KM</div>
-            <div><strong>Difficulty:</strong> Easy</div>
           </div>
-          <div style="padding: 1.6rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff; margin-bottom: 0.6rem;">
-              Sunday Breakfast Rumble
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--brand-black); margin-bottom: 0.5rem;">
+              Sunday Breakfast Ride
             </h3>
-            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.4rem;">
-              Meet at your city's Vanguard showroom at 6:00 AM. A brisk 60 km sunrise cruise followed by authentic dhaba breakfast with fellow owners.
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.2rem;">
+              Meet at your city's showroom at 6:00 AM. A brisk 60 km sunrise cruise followed by breakfast with fellow owners.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 1rem;">
               <div>
-                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Registration Fee</div>
-                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: var(--accent-green-bright);">FREE <small style="font-size:0.75rem; color:var(--text-muted);">(Community)</small></div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase;">Fee</div>
+                <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #166534;">FREE</div>
               </div>
-              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Sunday Breakfast Rumble (Local Chapter)', 'FREE')">Join Ride</button>
+              <button class="btn btn-primary btn-sm" onclick="selectRideForForm('Sunday Breakfast Ride')">Join</button>
             </div>
           </div>
         </article>
@@ -181,30 +184,30 @@
     </div>
   </section>
 
-  <!-- Interactive Ride Registration Lead Form -->
-  <section id="registerSection" style="padding: 5rem 0; background: linear-gradient(180deg, var(--bg-dark) 0%, #11151f 100%); border-top: 1px solid var(--border-subtle);">
-    <div class="container" style="max-width: 860px;">
+  <!-- Clean Ride Registration Form -->
+  <section id="registerSection" style="padding: 4.5rem 0; background: #ffffff; border-top: 1px solid var(--border-light);">
+    <div class="container" style="max-width: 800px;">
       <div class="section-header text-center">
-        <span class="section-tag">Claim Your Saddle</span>
-        <h2 class="section-title">Register For An <span>Expedition</span></h2>
-        <p class="section-desc">Slots are strictly capped per tour to preserve ride harmony and mechanical safety standards.</p>
+        <span class="section-tag">Claim Your Spot</span>
+        <h2 class="section-title">Expedition <span>Registration</span></h2>
+        <p class="section-desc">Slots are strictly capped per tour to ensure rider safety and convoy coordination.</p>
       </div>
 
       <div class="lead-form-container">
-        <form data-lead-form data-lead-type="Official Expedition Registration">
+        <form data-lead-form data-lead-type="Expedition Registration">
           <div class="form-group">
-            <label class="form-label">Selected Expedition *</label>
+            <label class="form-label">Selected Ride *</label>
             <select name="selectedExpedition" id="expeditionDropdown" class="form-control" required>
               <option value="Trans-Himalayan Odyssey 2027">Trans-Himalayan Odyssey 2027 (June 12 - 26)</option>
               <option value="Konkan Coastal Highway Thunder">Konkan Coastal Highway Thunder (August 18 - 22)</option>
-              <option value="Sunday Breakfast Rumble">Sunday Breakfast Rumble (Upcoming Weekend)</option>
+              <option value="Sunday Breakfast Ride">Sunday Breakfast Ride (Upcoming Weekend)</option>
             </select>
           </div>
 
           <div class="form-grid-2">
             <div class="form-group">
               <label class="form-label">Rider Full Name *</label>
-              <input type="text" name="riderName" placeholder="Full Name as on License" required class="form-control">
+              <input type="text" name="riderName" placeholder="Full Name" required class="form-control">
             </div>
             <div class="form-group">
               <label class="form-label">Mobile Number *</label>
@@ -218,37 +221,23 @@
               <input type="email" name="email" placeholder="rider@domain.com" required class="form-control">
             </div>
             <div class="form-group">
-              <label class="form-label">Motorcycle You Will Ride *</label>
+              <label class="form-label">Motorcycle Model *</label>
               <select name="bikeRidden" class="form-control" required>
                 <option value="Vanguard Hunter 650 Twin">Vanguard Hunter 650 Twin</option>
                 <option value="Vanguard Expedition 450">Vanguard Expedition 450</option>
                 <option value="Vanguard Valkyrie Cruiser 650">Vanguard Valkyrie Cruiser 650</option>
                 <option value="Vanguard Rogue Scrambler 400">Vanguard Rogue Scrambler 400</option>
-                <option value="Need Factory Rental Bike">Request Factory Rental Bike (+₹2,500/day)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label class="form-label">Home City / Chapter</label>
-              <input type="text" name="homeCity" placeholder="e.g. Mumbai, New Delhi, Bengaluru" required class="form-control">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Pillion / Co-Rider Joining?</label>
-              <select name="pillionOption" class="form-control">
-                <option value="Solo Rider">Solo Rider</option>
-                <option value="Riding with Pillion (+40% surcharge)">Riding with Pillion (+40% surcharge)</option>
+                <option value="Other Brand Motorcycle">Other Brand Motorcycle</option>
               </select>
             </div>
           </div>
 
           <label class="custom-checkbox">
             <input type="checkbox" name="fitnessDeclaration" required checked>
-            <span>I certify that I am medically fit for long-distance motorcycling and carry appropriate medical insurance.</span>
+            <span>I confirm that I possess a valid motorcycle driving license and medical insurance.</span>
           </label>
 
-          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1.2rem;">
             Submit Ride Registration
           </button>
         </form>
@@ -260,7 +249,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-bottom">
-        <div>&copy; 2026 Vanguard Motorcycles. Brotherhood & Touring Division.</div>
+        <div>&copy; 2026 Vanguard Motorcycles. Touring & Expeditions.</div>
         <div><a href="index.html">Home</a></div>
       </div>
     </div>

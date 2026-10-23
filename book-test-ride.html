@@ -4,49 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book a Test Ride | Vanguard Motorcycles</title>
-  <meta name="description" content="Experience pure motorcycling firsthand. Book a test ride at your nearest Vanguard showroom for the Hunter 650, Expedition 450, or Valkyrie Cruiser.">
+  <meta name="description" content="Book a test ride at your nearest Vanguard showroom for the Hunter 650, Expedition 450, or Valkyrie Cruiser.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .model-select-card {
-      background: var(--bg-surface);
-      border: 2px solid var(--border-light);
-      border-radius: var(--radius-md);
-      padding: 1rem;
+      background: #ffffff;
+      border: 1.5px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 0.9rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 1rem;
-      transition: all var(--transition-fast);
+      transition: all var(--transition);
     }
     .model-select-card:hover {
-      border-color: rgba(226, 88, 34, 0.5);
-      background: var(--bg-card-hover);
+      border-color: var(--brand-black);
     }
     .model-select-card.selected {
-      border-color: var(--accent-copper);
-      background: rgba(226, 88, 34, 0.08);
-      box-shadow: 0 0 15px rgba(226, 88, 34, 0.25);
+      border-color: var(--brand-red);
+      background: #fffafa;
     }
     .model-select-thumb {
-      width: 70px;
-      height: 50px;
+      width: 75px;
+      height: 52px;
       border-radius: 4px;
       object-fit: cover;
     }
     .slot-pill {
-      padding: 0.6rem 1rem;
+      padding: 0.65rem 0.8rem;
       border-radius: var(--radius-sm);
-      border: 1px solid var(--border-light);
-      background: var(--bg-surface);
+      border: 1.5px solid var(--border-light);
+      background: #ffffff;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       text-align: center;
-      transition: all var(--transition-fast);
+      transition: all var(--transition);
     }
     .slot-pill.selected {
-      background: var(--accent-copper);
-      border-color: var(--accent-copper);
-      color: #fff;
+      background: var(--brand-black);
+      border-color: var(--brand-black);
+      color: #ffffff;
       font-weight: 700;
     }
   </style>
@@ -84,17 +82,17 @@
   </header>
 
   <!-- Page Header -->
-  <section style="background: radial-gradient(circle at 50% 20%, #1a2230 0%, #0a0c10 80%); padding: 4.5rem 0 3rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+  <section style="background: #ffffff; padding: 3.5rem 0 2.5rem; text-align: center; border-bottom: 1px solid var(--border-light);">
     <div class="container">
-      <span class="section-tag">Pure Riding Experience</span>
+      <span class="section-tag">Test Ride Experience</span>
       <h1 class="section-title">Schedule A <span>Test Ride</span></h1>
-      <p class="section-desc" style="margin: 0.8rem auto 0;">No paperwork hassle. Complimentary certified helmets provided. Feel the twin-cylinder soul on open asphalt.</p>
+      <p class="section-desc" style="margin: 0.6rem auto 0;">No paperwork hassle. Complimentary helmets provided at authorized showrooms.</p>
     </div>
   </section>
 
   <!-- Multi-Step Booking Interface -->
-  <section style="padding: 4rem 0 6rem; background: var(--bg-dark);">
-    <div class="container" style="max-width: 1080px;">
+  <section style="padding: 4rem 0 5rem; background: var(--bg-light);">
+    <div class="container" style="max-width: 1040px;">
       
       <!-- Stepper Header -->
       <div class="step-indicator">
@@ -116,48 +114,48 @@
         </div>
       </div>
 
-      <div class="grid-2" style="grid-template-columns: 1.4fr 0.9fr; gap: 2.5rem; align-items: flex-start;">
+      <div class="grid-2" style="grid-template-columns: 1.4fr 0.9fr; gap: 2rem; align-items: flex-start;">
         
         <!-- Form Container -->
-        <div class="lead-form-container" style="padding: 2.2rem;">
+        <div class="lead-form-container">
           <form id="multiStepTestRideForm" data-lead-form data-lead-type="Official Test Ride Booking">
             
             <!-- STEP 1: Select Motorcycle -->
             <div class="form-step-section" id="step1">
-              <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; text-transform: uppercase;">
-                Step 1: Choose Your Ride
+              <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+                Step 1: Choose Your Motorcycle
               </h3>
 
-              <div style="display: flex; flex-direction: column; gap: 0.9rem;" id="modelSelectGroup">
-                <div class="model-select-card selected" data-model="Hunter 650 Twin" data-price="₹3,49,000">
+              <div style="display: flex; flex-direction: column; gap: 0.8rem;" id="modelSelectGroup">
+                <div class="model-select-card selected" data-model="Hunter 650 Twin" data-price="₹ 3,49,000*">
                   <img src="assets/images/hero-hunter-650.jpg" alt="Hunter 650" class="model-select-thumb">
                   <div style="flex-grow: 1;">
-                    <div style="font-weight: 700; color: #fff;">Vanguard Hunter 650 Twin</div>
+                    <div style="font-weight: 700; color: var(--brand-black);">Vanguard Hunter 650 Twin</div>
                     <div style="font-size: 0.78rem; color: var(--text-muted);">648cc Cafe Racer • 47.4 HP</div>
                   </div>
-                  <span class="badge badge-copper">Selected</span>
+                  <span class="badge badge-red">Selected</span>
                 </div>
 
-                <div class="model-select-card" data-model="Expedition 450" data-price="₹2,89,000">
+                <div class="model-select-card" data-model="Expedition 450" data-price="₹ 2,89,000*">
                   <img src="assets/images/model-expedition-450.jpg" alt="Expedition 450" class="model-select-thumb">
                   <div style="flex-grow: 1;">
-                    <div style="font-weight: 700; color: #fff;">Vanguard Expedition 450</div>
+                    <div style="font-weight: 700; color: var(--brand-black);">Vanguard Expedition 450</div>
                     <div style="font-size: 0.78rem; color: var(--text-muted);">452cc Adventure Dual-Sport • 40 HP</div>
                   </div>
                 </div>
 
-                <div class="model-select-card" data-model="Valkyrie Cruiser 650" data-price="₹3,75,000">
+                <div class="model-select-card" data-model="Valkyrie Cruiser 650" data-price="₹ 3,75,000*">
                   <img src="assets/images/model-valkyrie-cruiser.jpg" alt="Valkyrie Cruiser" class="model-select-thumb">
                   <div style="flex-grow: 1;">
-                    <div style="font-weight: 700; color: #fff;">Vanguard Valkyrie Cruiser 650</div>
+                    <div style="font-weight: 700; color: var(--brand-black);">Vanguard Valkyrie Cruiser 650</div>
                     <div style="font-size: 0.78rem; color: var(--text-muted);">648cc Highway Cruiser • Low Seat</div>
                   </div>
                 </div>
 
-                <div class="model-select-card" data-model="Rogue Scrambler 400" data-price="₹2,25,000">
+                <div class="model-select-card" data-model="Rogue Scrambler 400" data-price="₹ 2,25,000*">
                   <img src="assets/images/model-rogue-scrambler.jpg" alt="Rogue Scrambler" class="model-select-thumb">
                   <div style="flex-grow: 1;">
-                    <div style="font-weight: 700; color: #fff;">Vanguard Rogue Scrambler 400</div>
+                    <div style="font-weight: 700; color: var(--brand-black);">Vanguard Rogue Scrambler 400</div>
                     <div style="font-size: 0.78rem; color: var(--text-muted);">398cc Urban Tracker • Lightweight</div>
                   </div>
                 </div>
@@ -172,7 +170,7 @@
 
             <!-- STEP 2: Showroom & City -->
             <div class="form-step-section" id="step2" style="display: none;">
-              <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+              <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1.2rem; text-transform: uppercase;">
                 Step 2: Nearest Authorized Showroom
               </h3>
 
@@ -189,16 +187,12 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label">Dealership Hub</label>
+                <label class="form-label">Dealership Showroom</label>
                 <select name="selectedDealer" id="dealerDropdown" class="form-control" required>
-                  <option value="Vanguard Flagship Experience Hub, Connaught Place, New Delhi">Vanguard Flagship Experience Hub, Connaught Place, New Delhi</option>
+                  <option value="Vanguard Flagship, Connaught Place, New Delhi">Vanguard Flagship, Connaught Place, New Delhi</option>
                   <option value="Vanguard MotoWorks, Cyber City, Gurugram">Vanguard MotoWorks, Cyber City, Gurugram</option>
                   <option value="Vanguard St. George, South Extension, New Delhi">Vanguard St. George, South Extension, New Delhi</option>
                 </select>
-              </div>
-
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-sm); padding: 0.9rem; font-size: 0.82rem; color: #34d399;">
-                Showroom features dedicated private test track and motorcycle handover lounge.
               </div>
 
               <div style="margin-top: 2rem; display: flex; justify-content: space-between;">
@@ -209,8 +203,8 @@
 
             <!-- STEP 3: Date & Slot -->
             <div class="form-step-section" id="step3" style="display: none;">
-              <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; text-transform: uppercase;">
-                Step 3: Select Date & Time Window
+              <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+                Step 3: Select Date & Time Slot
               </h3>
 
               <div class="form-group">
@@ -219,8 +213,8 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label">Convenient Time Window</label>
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem;" id="slotGrid">
+                <label class="form-label">Time Window</label>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem;" id="slotGrid">
                   <div class="slot-pill selected" data-slot="Morning (10:30 AM - 1:00 PM)">Morning <br><small>10:30 AM - 1 PM</small></div>
                   <div class="slot-pill" data-slot="Afternoon (1:30 PM - 4:30 PM)">Afternoon <br><small>1:30 PM - 4:30 PM</small></div>
                   <div class="slot-pill" data-slot="Evening (5:00 PM - 7:30 PM)">Evening <br><small>5:00 PM - 7:30 PM</small></div>
@@ -236,14 +230,14 @@
 
             <!-- STEP 4: Rider Details -->
             <div class="form-step-section" id="step4" style="display: none;">
-              <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; text-transform: uppercase;">
-                Step 4: Rider Information
+              <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1.2rem; text-transform: uppercase;">
+                Step 4: Rider Contact Information
               </h3>
 
               <div class="form-grid-2">
                 <div class="form-group">
                   <label class="form-label">Full Name *</label>
-                  <input type="text" name="riderName" placeholder="e.g. Dhruvin Shah" required class="form-control" id="riderNameInput">
+                  <input type="text" name="riderName" placeholder="Full Name" required class="form-control" id="riderNameInput">
                 </div>
                 <div class="form-group">
                   <label class="form-label">Mobile Number *</label>
@@ -254,14 +248,14 @@
               <div class="form-grid-2">
                 <div class="form-group">
                   <label class="form-label">Email Address *</label>
-                  <input type="email" name="email" placeholder="name@example.com" required class="form-control">
+                  <input type="email" name="email" placeholder="name@domain.com" required class="form-control">
                 </div>
                 <div class="form-group">
                   <label class="form-label">Helmet Size Preference</label>
                   <select name="helmetSize" class="form-control">
-                    <option value="M (57-58 cm)">Medium (57-58 cm)</option>
-                    <option value="L (59-60 cm)">Large (59-60 cm)</option>
-                    <option value="XL (61-62 cm)">Extra Large (61-62 cm)</option>
+                    <option value="M (Medium)">Medium (57-58 cm)</option>
+                    <option value="L (Large)">Large (59-60 cm)</option>
+                    <option value="XL (Extra Large)">Extra Large (61-62 cm)</option>
                     <option value="Bringing Own Helmet">Bringing Own Helmet</option>
                   </select>
                 </div>
@@ -269,17 +263,12 @@
 
               <label class="custom-checkbox">
                 <input type="checkbox" name="licenseVerified" required checked>
-                <span>I confirm that I possess a valid two-wheeler motorcycle driving license and will present it at the showroom before the ride.</span>
-              </label>
-
-              <label class="custom-checkbox" style="margin-top: 0.6rem;">
-                <input type="checkbox" name="whatsappUpdates" checked>
-                <span>Receive ride slot booking confirmation and turn-by-turn directions via WhatsApp / SMS.</span>
+                <span>I confirm that I hold a valid two-wheeler motorcycle driving license.</span>
               </label>
 
               <div style="margin-top: 2rem; display: flex; justify-content: space-between;">
                 <button type="button" class="btn btn-secondary" onclick="goToStep(3)">&larr; Back</button>
-                <button type="submit" class="btn btn-primary" id="confirmRideBtn">Confirm & Book Test Ride</button>
+                <button type="submit" class="btn btn-primary" id="confirmRideBtn">Confirm Test Ride</button>
               </div>
             </div>
 
@@ -287,36 +276,36 @@
         </div>
 
         <!-- Live Booking Summary Panel -->
-        <div style="background: var(--bg-card); border: 1px solid var(--border-copper); border-radius: var(--radius-lg); padding: 2rem; position: sticky; top: 100px;">
-          <span class="badge badge-copper" style="margin-bottom: 0.8rem;">Live Booking Summary</span>
-          <h4 style="font-family: var(--font-heading); font-size: 1.3rem; text-transform: uppercase; margin-bottom: 1.2rem;">
+        <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.8rem; box-shadow: var(--shadow-subtle); position: sticky; top: 90px;">
+          <span class="badge badge-red" style="margin-bottom: 0.8rem;">Booking Summary</span>
+          <h4 style="font-family: var(--font-heading); font-size: 1.15rem; text-transform: uppercase; margin-bottom: 1.2rem;">
             Test Ride Details
           </h4>
 
-          <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Motorcycle</div>
-            <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #fff;" id="summaryModel">
+          <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.8rem; margin-bottom: 0.8rem;">
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Selected Motorcycle</div>
+            <div style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 800; color: var(--brand-black);" id="summaryModel">
               Hunter 650 Twin
             </div>
-            <div style="font-size: 0.8rem; color: var(--accent-copper);" id="summaryPrice">Ex-Showroom: ₹3,49,000</div>
+            <div style="font-size: 0.78rem; color: var(--brand-red); font-weight: 600;" id="summaryPrice">Starting: ₹ 3,49,000*</div>
           </div>
 
-          <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Dealership Hub</div>
-            <div style="font-size: 0.9rem; color: #fff; font-weight: 600;" id="summaryShowroom">
+          <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.8rem; margin-bottom: 0.8rem;">
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Showroom</div>
+            <div style="font-size: 0.88rem; color: var(--brand-black); font-weight: 600;" id="summaryShowroom">
               Connaught Place, New Delhi
             </div>
           </div>
 
-          <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
-            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Date & Time Window</div>
-            <div style="font-size: 0.9rem; color: #fff; font-weight: 600;" id="summarySchedule">
+          <div style="border-bottom: 1px solid var(--border-light); padding-bottom: 0.8rem; margin-bottom: 0.8rem;">
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Schedule</div>
+            <div style="font-size: 0.88rem; color: var(--brand-black); font-weight: 600;" id="summarySchedule">
               Tomorrow • Morning (10:30 AM - 1:00 PM)
             </div>
           </div>
 
-          <div style="background: rgba(0,0,0,0.3); border-radius: 6px; padding: 0.8rem; font-size: 0.78rem; color: var(--text-secondary);">
-            <strong style="color: #fff;">Ride Guidelines:</strong> Mandatory shoes, jeans, and valid driving license required. Vanguard provides sanitized CE-certified riding jackets and helmets.
+          <div style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.5;">
+            *Please bring your original driving license and wear shoes and full-length trousers on the day of the test ride.
           </div>
         </div>
 
@@ -336,7 +325,6 @@
 
   <script src="assets/js/main.js"></script>
   <script>
-    // Pre-fill tomorrow as default date
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     const dateInput = document.getElementById('testRideDate');
@@ -345,7 +333,6 @@
       dateInput.min = new Date().toISOString().split('T')[0];
     }
 
-    // Step navigation
     function goToStep(stepNum) {
       for (let i = 1; i <= 4; i++) {
         document.getElementById(`step${i}`).style.display = 'none';
@@ -360,7 +347,6 @@
       updateLiveSummary();
     }
 
-    // Model select cards handler
     const modelCards = document.querySelectorAll('#modelSelectGroup .model-select-card');
     modelCards.forEach(card => {
       card.addEventListener('click', () => {
@@ -371,7 +357,7 @@
         });
         card.classList.add('selected');
         const badgeSpan = document.createElement('span');
-        badgeSpan.className = 'badge badge-copper';
+        badgeSpan.className = 'badge badge-red';
         badgeSpan.textContent = 'Selected';
         card.appendChild(badgeSpan);
 
@@ -379,37 +365,36 @@
         const price = card.getAttribute('data-price');
         document.getElementById('hiddenModelInput').value = model;
         document.getElementById('summaryModel').textContent = model;
-        document.getElementById('summaryPrice').textContent = `Ex-Showroom: ${price}`;
+        document.getElementById('summaryPrice').textContent = `Starting: ${price}`;
       });
     });
 
-    // Dealer dropdowns by city
     const showroomsByCity = {
       'Delhi NCR': [
-        'Vanguard Flagship Experience Hub, Connaught Place, New Delhi',
+        'Vanguard Flagship, Connaught Place, New Delhi',
         'Vanguard MotoWorks, Cyber City, Gurugram',
         'Vanguard St. George, South Extension, New Delhi'
       ],
       'Mumbai': [
-        'Vanguard Heritage Lounge, Bandra West, Mumbai',
+        'Vanguard Bandra Heritage Garage, Bandra West',
         'Vanguard Apex Center, Andheri East, Mumbai',
         'Vanguard Coastal Garage, Thane West'
       ],
       'Bengaluru': [
-        'Vanguard Indiranagar Pavilion, 100 Ft Road, Bengaluru',
-        'Vanguard Whitefield Tech Hub, Bengaluru',
+        'Vanguard Indiranagar MotoHub, 100 Ft Road, Bengaluru',
+        'Vanguard Whitefield Hub, Bengaluru',
         'Vanguard Koramangala Garage, Bengaluru'
       ],
       'Chennai': [
-        'Vanguard Factory Experience Center, Anna Salai, Chennai',
+        'Vanguard Anna Salai Pavilion, Chennai',
         'Vanguard ECR Coastal Point, Adyar, Chennai'
       ],
       'Hyderabad': [
-        'Vanguard Jubilee Hills Pavilion, Road No 36, Hyderabad',
+        'Vanguard Jubilee Hills Center, Road No 36, Hyderabad',
         'Vanguard Gachibowli MotoWorks, Hyderabad'
       ],
       'Pune': [
-        'Vanguard Koregaon Park Lounge, Pune',
+        'Vanguard Koregaon Park Garage, Pune',
         'Vanguard Deccan Gymkhana, Pune'
       ]
     };
@@ -431,7 +416,6 @@
       document.getElementById('summaryShowroom').textContent = e.target.value;
     });
 
-    // Time slots handler
     const slotPills = document.querySelectorAll('#slotGrid .slot-pill');
     slotPills.forEach(pill => {
       pill.addEventListener('click', () => {
@@ -449,7 +433,6 @@
       document.getElementById('summarySchedule').textContent = `${dateVal} • ${slotVal}`;
     }
 
-    // Auto-select model from URL parameter if passed (e.g. ?model=Expedition450)
     const urlParams = new URLSearchParams(window.location.search);
     const preModel = urlParams.get('model');
     if (preModel) {

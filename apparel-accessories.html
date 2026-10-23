@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apparel & Genuine Accessories | Vanguard Motorcycles</title>
-  <meta name="description" content="Explore certified leather riding jackets, helmets, gloves, and genuine motorcycle touring accessories engineered for purist riders.">
+  <meta name="description" content="Explore genuine riding jackets, helmets, gloves, and touring accessories crafted for purist riders.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
     .gear-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      border: 1px solid var(--border-light);
       border-radius: var(--radius-md);
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: all var(--transition-fast);
+      transition: all var(--transition);
+      box-shadow: var(--shadow-subtle);
     }
     .gear-card:hover {
-      border-color: var(--accent-copper);
-      transform: translateY(-4px);
-      box-shadow: var(--glass-shadow);
+      box-shadow: var(--shadow-card);
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
     }
     .gear-img-wrap {
       aspect-ratio: 1/1;
-      background: #0f121a;
+      background: #f8fafc;
       overflow: hidden;
       position: relative;
     }
@@ -31,10 +32,6 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform var(--transition-smooth);
-    }
-    .gear-card:hover .gear-img-wrap img {
-      transform: scale(1.05);
     }
   </style>
 </head>
@@ -71,104 +68,104 @@
   </header>
 
   <!-- Page Header -->
-  <section style="background: radial-gradient(circle at 50% 20%, #1a2230 0%, #0a0c10 80%); padding: 4.5rem 0 3rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+  <section style="background: #ffffff; padding: 3.5rem 0 2rem; text-align: center; border-bottom: 1px solid var(--border-light);">
     <div class="container">
-      <span class="section-tag">Pure Rider Protection</span>
-      <h1 class="section-title">Apparel & <span>Gear</span></h1>
-      <p class="section-desc" style="margin: 0.8rem auto 2rem;">Engineered for safety on asphalt and timeless British cafe styling when you step off the saddle.</p>
+      <span class="section-tag">Rider Gear & Merchandise</span>
+      <h1 class="section-title">Apparel & <span>Accessories</span></h1>
+      <p class="section-desc" style="margin: 0.6rem auto 1.8rem;">Engineered for safety on the road and classic styling off the saddle.</p>
 
       <div class="category-tabs" id="gearFilterTabs">
         <button class="cat-tab active" data-filter="all">All Products</button>
         <button class="cat-tab" data-filter="jackets">Riding Jackets</button>
         <button class="cat-tab" data-filter="helmets">Helmets</button>
-        <button class="cat-tab" data-filter="parts">Genuine Accessories</button>
+        <button class="cat-tab" data-filter="parts">Accessories</button>
       </div>
     </div>
   </section>
 
   <!-- Product Grid -->
-  <section style="padding: 4.5rem 0; background: var(--bg-dark);">
+  <section style="padding: 4rem 0; background: var(--bg-light);">
     <div class="container">
       <div class="grid-4" id="gearGrid">
         
         <!-- Product 1 -->
         <article class="gear-card" data-category="jackets">
           <div class="gear-img-wrap">
-            <span class="badge badge-copper" style="position: absolute; top: 10px; right: 10px; z-index: 2;">CE Level 2</span>
-            <img src="assets/images/gear-jacket.jpg" alt="Vanguard St. George Leather Riding Jacket" loading="lazy">
+            <span class="badge badge-red" style="position: absolute; top: 10px; right: 10px; z-index: 2;">CE Certified</span>
+            <img src="assets/images/gear-jacket.jpg" alt="Vanguard Vintage Leather Riding Jacket" loading="lazy">
           </div>
           <div style="padding: 1.4rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--accent-copper); font-weight: 700;">Full Grain Leather</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.3rem 0 0.5rem;">St. George Vintage Leather Jacket</h3>
-            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-              1.2mm distressed cowhide, D3O armor at shoulders and elbows, removable thermal liner.
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--brand-red); font-weight: 700;">Genuine Leather</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.05rem; color: var(--brand-black); margin: 0.3rem 0 0.5rem;">Vintage Brown Leather Jacket</h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+              1.2mm distressed cowhide, CE Level 2 shoulder and elbow armor, thermal liner.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.8rem;">
-              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: #fff;">₹14,990</div>
-              <button class="btn btn-outline-copper btn-sm" onclick="openGearLeadModal('St. George Vintage Leather Jacket', '₹14,990')">Reserve</button>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 0.8rem;">
+              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--brand-black);">₹ 14,990</div>
+              <button class="btn btn-primary btn-sm" onclick="openGearLeadModal('Vintage Brown Leather Jacket', '₹ 14,990')">Reserve</button>
             </div>
           </div>
         </article>
 
         <!-- Product 2 -->
         <article class="gear-card" data-category="helmets">
-          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #252e3d 0%, #10141d 100%);">
-            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#e25822" stroke-width="1.5">
+          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: #e2e8f0;">
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.5">
               <path d="M12 2a9 9 0 0 0-9 9c0 3.87 2.45 7.17 5.92 8.42L9 22h6l.08-2.58C18.55 18.17 21 14.87 21 11a9 9 0 0 0-9-9z"/>
               <path d="M7 11h10v2a5 5 0 0 1-10 0v-2z"/>
             </svg>
-            <span class="badge badge-green" style="position: absolute; top: 10px; right: 10px;">ECE 22.06</span>
+            <span class="badge badge-green" style="position: absolute; top: 10px; right: 10px;">ISI / ECE</span>
           </div>
           <div style="padding: 1.4rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--accent-copper); font-weight: 700;">Full Face Retro</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.3rem 0 0.5rem;">Apex Carbon Retro Helmet</h3>
-            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-              Ultralight multi-density EPS shell, anti-fog pinlock visor, brushed brass hardware.
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--brand-red); font-weight: 700;">Full Face Retro</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.05rem; color: var(--brand-black); margin: 0.3rem 0 0.5rem;">Apex Classic Full-Face Helmet</h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+              Multi-density EPS protection, anti-scratch visor, brass ventilation eyelets.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.8rem;">
-              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: #fff;">₹11,490</div>
-              <button class="btn btn-outline-copper btn-sm" onclick="openGearLeadModal('Apex Carbon Retro Helmet', '₹11,490')">Reserve</button>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 0.8rem;">
+              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--brand-black);">₹ 8,490</div>
+              <button class="btn btn-primary btn-sm" onclick="openGearLeadModal('Apex Classic Full-Face Helmet', '₹ 8,490')">Reserve</button>
             </div>
           </div>
         </article>
 
         <!-- Product 3 -->
         <article class="gear-card" data-category="parts">
-          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #252e3d 0%, #10141d 100%);">
-            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5">
+          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: #e2e8f0;">
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.5">
               <rect x="2" y="6" width="20" height="12" rx="2"/>
               <path d="M6 12h12M12 6v12"/>
             </svg>
           </div>
           <div style="padding: 1.4rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--accent-copper); font-weight: 700;">Touring Luggage</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.3rem 0 0.5rem;">Expedition Aluminum Panniers (Pair)</h3>
-            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-              Twin 37-liter lockable cases, waterproof silicone seals, stainless tie-down loops.
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--brand-red); font-weight: 700;">Genuine Touring Part</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.05rem; color: var(--brand-black); margin: 0.3rem 0 0.5rem;">Aluminum Hard Panniers (Pair)</h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+              Dual 37L lockable waterproof cases with heavy-duty quick-release frame stays.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.8rem;">
-              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: #fff;">₹34,000</div>
-              <button class="btn btn-outline-copper btn-sm" onclick="openGearLeadModal('Expedition Aluminum Panniers', '₹34,000')">Reserve</button>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 0.8rem;">
+              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--brand-black);">₹ 34,000</div>
+              <button class="btn btn-primary btn-sm" onclick="openGearLeadModal('Aluminum Hard Panniers', '₹ 34,000')">Reserve</button>
             </div>
           </div>
         </article>
 
         <!-- Product 4 -->
         <article class="gear-card" data-category="jackets">
-          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #252e3d 0%, #10141d 100%);">
-            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5">
+          <div class="gear-img-wrap" style="display: flex; align-items: center; justify-content: center; background: #e2e8f0;">
+            <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="1.5">
               <path d="M4 4h16v16H4zM9 9h6v6H9z"/>
             </svg>
           </div>
           <div style="padding: 1.4rem; display: flex; flex-direction: column; flex-grow: 1;">
-            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--accent-copper); font-weight: 700;">All-Weather Touring</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #fff; margin: 0.3rem 0 0.5rem;">Odyssey 4-Season Textile Jacket</h3>
-            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-              Cordura 600D abrasion resistance, waterproof membrane, chest ventilation zippers.
+            <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--brand-red); font-weight: 700;">Touring Jacket</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.05rem; color: var(--brand-black); margin: 0.3rem 0 0.5rem;">All-Season Textile Jacket</h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5;">
+              Cordura 600D abrasion resistance, waterproof membrane, chest vents.
             </p>
-            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 0.8rem;">
-              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: #fff;">₹12,490</div>
-              <button class="btn btn-outline-copper btn-sm" onclick="openGearLeadModal('Odyssey 4-Season Jacket', '₹12,490')">Reserve</button>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-light); padding-top: 0.8rem;">
+              <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.15rem; color: var(--brand-black);">₹ 11,990</div>
+              <button class="btn btn-primary btn-sm" onclick="openGearLeadModal('All-Season Textile Jacket', '₹ 11,990')">Reserve</button>
             </div>
           </div>
         </article>
@@ -179,23 +176,23 @@
 
   <!-- Reservation Lead Modal -->
   <div id="gearLeadModal" class="modal-overlay">
-    <div class="modal-card" style="text-align: left; max-width: 500px;">
+    <div class="modal-card" style="text-align: left; max-width: 480px;">
       <button class="modal-close-btn" onclick="closeModal('gearLeadModal')">&times;</button>
-      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; text-transform: uppercase; margin-bottom: 0.5rem;">
-        Reserve Gear at Showroom
+      <h3 style="font-family: var(--font-heading); font-size: 1.3rem; text-transform: uppercase; margin-bottom: 0.4rem;">
+        Reserve at Showroom
       </h3>
-      <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1.5rem;">
-        We will hold your preferred size at your nearest Vanguard dealer for trial and purchase.
+      <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.4rem;">
+        We will hold your preferred size at your nearest Vanguard dealer for fitting and purchase.
       </p>
 
-      <form data-lead-form data-lead-type="Apparel & Accessories Showroom Reservation">
+      <form data-lead-form data-lead-type="Apparel Showroom Reservation">
         <input type="hidden" name="gearItem" id="modalGearItemName" value="">
         <input type="hidden" name="gearPrice" id="modalGearItemPrice" value="">
 
-        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 0.8rem; margin-bottom: 1.2rem;">
-          <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Selected Item</div>
-          <div id="modalGearTitle" style="font-weight: 700; color: #fff;">Item Name</div>
-          <div id="modalGearPriceDisplay" style="color: var(--accent-copper); font-size: 0.9rem; font-weight: 700;">Price</div>
+        <div style="background: var(--bg-light); border: 1px solid var(--border-light); border-radius: 4px; padding: 0.8rem; margin-bottom: 1.2rem;">
+          <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Selected Item</div>
+          <div id="modalGearTitle" style="font-weight: 700; color: var(--brand-black);">Item Name</div>
+          <div id="modalGearPriceDisplay" style="color: var(--brand-red); font-size: 0.9rem; font-weight: 800;">Price</div>
         </div>
 
         <div class="form-group">
@@ -211,11 +208,11 @@
           <div class="form-group">
             <label class="form-label">Size / Fit</label>
             <select name="selectedSize" class="form-control">
-              <option value="S (38)">S (38)</option>
-              <option value="M (40)" selected>M (40)</option>
-              <option value="L (42)">L (42)</option>
-              <option value="XL (44)">XL (44)</option>
-              <option value="Universal / Not Applicable">Universal / N/A</option>
+              <option value="S">S</option>
+              <option value="M" selected>M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="Universal">Universal</option>
             </select>
           </div>
         </div>
@@ -225,13 +222,13 @@
           <select name="pickupCity" class="form-control" required>
             <option value="Delhi NCR Hub">Delhi NCR Experience Hub</option>
             <option value="Mumbai Bandra">Mumbai Bandra Garage</option>
-            <option value="Bengaluru Indiranagar">Bengaluru Indiranagar Pavilion</option>
+            <option value="Bengaluru Indiranagar">Bengaluru Indiranagar Hub</option>
             <option value="Chennai Anna Salai">Chennai Factory Outlet</option>
           </select>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" onclick="setTimeout(()=>closeModal('gearLeadModal'), 200)">
-          Confirm Dealer Reservation
+          Confirm Reservation
         </button>
       </form>
     </div>
@@ -242,14 +239,13 @@
     <div class="container">
       <div class="footer-bottom">
         <div>&copy; 2026 Vanguard Motorcycles. Rider Apparel Division.</div>
-        <div><a href="index.html">Back to Home</a></div>
+        <div><a href="index.html">Home</a></div>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
   <script>
-    // Gear Filter Tabs
     const tabs = document.querySelectorAll('#gearFilterTabs .cat-tab');
     const cards = document.querySelectorAll('#gearGrid .gear-card');
 
