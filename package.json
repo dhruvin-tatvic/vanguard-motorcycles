@@ -1,0 +1,11 @@
+{
+  "name": "vanguard-motorcycles",
+  "version": "1.0.0",
+  "description": "Vanguard Motorcycles pure motorcycling website with 10 pages and lead generation",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["motorcycle", "royal-enfield", "tvs-motor", "lead-generation"],
+  "author": "Vanguard Motorcycles",
+  "license": "MIT"
+}
